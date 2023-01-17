@@ -208,6 +208,42 @@ height: 40px;
 width:20%;
 }
 
+#bases{
+  gap: 90px;
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.bases-col {
+width:33%;
+}
+
+h1.bases-col-1{
+  text-align: left;
+    background-image: url(./resources/images/Amarillo_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 50px;
+}
+
+h1.bases-col-2{
+  text-align: left;
+    background-image: url(./resources/images/Verde_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 50px;
+}
+
+h1.bases-col-3{
+  text-align: left;
+    background-image: url(./resources/images/Rosado_3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 50px;
+}
+
 footer {
   background-color: #552FEA;
   padding: 30px;
