@@ -1,6 +1,6 @@
 @font-face {
     font-family: SM Primaria;
-    src: url(./SMPrimaria-Regular.otf);
+    src: url(./resources/css/SMPrimaria-Regular.otf);
 }
 * {
     font-family: SM Primaria, Arial, sans-serif;
