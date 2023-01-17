@@ -209,7 +209,7 @@ width:20%;
 }
 
 #bases{
-  gap: 90px;
+  gap: 56px;
   display: flex;
   color: white;
   margin: 0 auto;
@@ -278,12 +278,12 @@ footer img{
   display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  animation: marquee 20s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
