@@ -21,3 +21,7 @@ function showContent(tabNum) {
     }
   }
 }
+
+let marquee = document.querySelector(".marquee p");
+marquee.style.transform = "translateX(50%)";
+
