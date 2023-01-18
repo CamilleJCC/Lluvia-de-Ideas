@@ -204,6 +204,10 @@ height: 40px;
   width: 54vw;
 }
 
+.purple-popup:hover{
+ animation:wobble;
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
 .purple-popup{
   width: 305px;
   color: white;
