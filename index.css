@@ -206,7 +206,6 @@ height: 40px;
   background: #552FEA;
   width: 305px;
   color: white;
-  transform: rotate(-15deg);
   padding: 40px;
   text-align: center;
   top: 685px;
@@ -214,6 +213,10 @@ height: 40px;
   right: 427px;
   position: absolute;
   border-radius: 28px;
+}
+
+.purple-popup.aos-init.aos-animate {
+  rotate: -15deg;
 }
 
 #instructions{
