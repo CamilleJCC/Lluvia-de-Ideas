@@ -104,6 +104,10 @@ h3{
     font-size: 40px;
 }
 
+.paragraph-title{
+  font-family: SM Primaria-Bold;
+}
+
 nav{
     color: blue;
     padding: 0px 20px;
@@ -276,11 +280,6 @@ footer img{
   border-radius: 30px;
 }
 
-.marquee-container:hover{
-  background: #00B0A9;
-  color: white;
-}
-
 .marquee {
   width: 100%;
   overflow: hidden;
@@ -297,7 +296,7 @@ footer img{
 
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-25%);
   }
   100% {
     transform: translateX(-100%);
@@ -318,4 +317,22 @@ footer img{
       line-height: 1.4em;
 }
   
+.mark-blue {
+  color: #00B0A9;
+  font-family: SM Primaria-Bold;
+}
 
+.mark-pink {
+  color: #FB00A7;
+  font-family: SM Primaria-Bold;
+}
+
+.mark-green {
+  color: #77EE79;
+  font-family: SM Primaria-Bold;
+}
+
+.mark-purple {
+  color: #552FEA;
+  font-family: SM Primaria-Bold;
+}
