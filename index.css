@@ -31,7 +31,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 5em;
-    position: sticky;
+    /* position: fixed;
+    top: 0;
+    width: 91vw; */
 }
 
 .nav-col.col-2 {
@@ -194,7 +196,8 @@ height: 40px;
   justify-content: center;
   flex-direction: column;
   gap: 100px;
-  margin-bottom: 20em;
+  /*margin-top: 10em; */
+  margin-bottom: 20em; 
 }
 
 .brand-claim img{
