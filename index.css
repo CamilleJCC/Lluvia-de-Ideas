@@ -296,7 +296,6 @@ footer {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  border-top: white 1px solid;
   align-items: flex-end;
   padding: 5em;
 }  
@@ -307,12 +306,14 @@ footer img{
 
 .marquee-container {
   overflow: hidden;
-  width: 100%;
+  width: 65%;
   background: white;
   padding: 10px;
   color: black;
   border-radius: 30px;
+  margin: 0 auto;
 }
+
 
 .marquee {
   width: 100%;
