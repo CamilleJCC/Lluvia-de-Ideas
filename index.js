@@ -24,5 +24,106 @@ function showContent(tabNum) {
 let marquee = document.querySelector(".marquee p");
 marquee.style.transform = "translateX(50%)";
 
+let W = window.innerWidth;
+let H = window.innerHeight;
+const canvas = document.getElementById("canvas");
+const context = canvas.getContext("2d");
+const maxConfettis = 160;
+const particles = [];
 
-
+const possibleColors = [
+  "#00B0A9",
+   "#552FEA",
+   "#FB00A7",
+   "#77EE79",
+   "#ED1B2E",
+   "#D3D800"
+ ];
+ 
+ function randomFromTo(from, to) {
+   return Math.floor(Math.random() * (to - from + 1) + from);
+ }
+ 
+ function confettiParticle() {
+   this.x = Math.random() * W; // x
+   this.y = Math.random() * H - H; // y
+   this.r = 60;
+   this.d = Math.random() * maxConfettis + 11;
+   this.color =
+     possibleColors[Math.floor(Math.random() * possibleColors.length)];
+   this.tilt = Math.floor(Math.random() * 33) - 11;
+   this.tiltAngleIncremental = Math.random() * 0.03 + 0.01;
+   this.tiltAngle = 0;
+ 
+   this.draw = function() {
+     context.beginPath();
+     context.strokeStyle = this.color;
+     context.lineWidth = this.r / 4;
+     context.moveTo(this.x + this.tilt + this.d / 5, this.y);
+     context.lineTo(this.x + this.tilt, this.y + this.tilt + this.d / 10);
+ 
+     return context.stroke();
+   };
+ }
+ 
+ function Draw() {
+   const results = [];
+ 
+   // Magical recursive functional love
+   requestAnimationFrame(Draw);
+ 
+   context.clearRect(0, 0, W, window.innerHeight);
+ 
+   for (var i = 0; i < maxConfettis; i++) {
+     results.push(particles[i].draw());
+   }
+ 
+   let particle = {};
+   let remainingFlakes = 0;
+   for (var i = 0; i < maxConfettis; i++) {
+     particle = particles[i];
+ 
+     particle.tiltAngle += particle.tiltAngleIncremental;
+     particle.y += (Math.cos(particle.d) + 3 + particle.d / 5) / 5;
+ 
+     particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+ 
+     if (particle.y <= H) remainingFlakes++;
+ 
+     // If a confetti has fluttered out of view,
+     // bring it back to above the viewport and let if re-fall.
+     if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
+       particle.x = Math.random() * W;
+       particle.y = -30;
+       particle.tilt = Math.floor(Math.random() * 10) - 20;
+     }
+   }
+ 
+   return results;
+ }
+ 
+ window.addEventListener(
+   "resize",
+   function() {
+     W = window.innerWidth;
+     H = window.innerHeight;
+     canvas.width = window.innerWidth;
+     canvas.height = window.innerHeight;
+   },
+   false
+ );
+ 
+ // Push new confetti objects to `particles[]`
+ for (var i = 0; i < maxConfettis; i++) {
+   particles.push(new confettiParticle());
+ }
+ 
+ // Initialize
+ canvas.width = W;
+ canvas.height = H;
+ Draw();
+ 
+ 
+ 
+ 
+ 

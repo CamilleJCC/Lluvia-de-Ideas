@@ -9,42 +9,39 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
-<body style="background-image: url(./resources/images/fondo-lluvia.png);
-background-repeat: no-repeat;
-background-size: 80%;
-background-position: center center; background-attachment: fixed;">
+<body>
    <nav class="fixed-nav">
     <div class="nav-col col-1">
      <a href="index.html"><img src="./resources/images/pencil@2x.png" alt="Logo" class="logo"></a> 
     </div>
     <div class="buttons">
     <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="#services"><button>CERTAMEN</button></a></div>
-    <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="#participa"><button>PARTICIPA</button></a></div>
-    <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"><a href="formulario.html"><button>FORMULARIO</button></a></div>
+    <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="formulario.html"><button>PARTICIPA</button></a></div>
     </div>
   </nav>
+  <canvas id="canvas"></canvas> 
   <div class="brand-claim">
-    <h1 style="width:666px" class="animating">UN CERTAMEN DE ANUNCIOS 
+    <h1 style="width:666px">UN CERTAMEN DE ANUNCIOS 
       PUBLICITARIOS PARA AULAS DE PRIMARIA 
       DE ANDALUCÍA</h1>
-      <img src="./resources/images/Luvia de ideas@2x.png" width="800px" data-aos="fade-up" data-aos-duration="1000">
-      <div class="purple-popup" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="250"><p>Si en vuestra clase llueven las 
+      <img src="./resources/images/Luvia de ideas@2x.png" width="800px" data-aos="fade-up" data-aos-duration="500">
+      <div class="purple-popup"><p>Si en vuestra clase llueven las 
         ideas… las de todos, las diferentes, 
         las que no se esperan… 
         <span style="font-family: SM Primaria-Bold;">¡Participad!</span></p></div>
-  </div>
-  <div id="instructions">
-    <div class="instructions-col">
-      <p>Trabajad como una agencia de
-        publicidad creando un anuncio.<br><br><span style="font-family:SM Primaria-Bold">¡Pensad un buen lema!</span></p>
-    </div>
-      <div class="instructions-col"><p>El tema: Vuestro entorno.
-        Pensad lo mejor de vuestra
-        localidad,<br><br><span style="font-family:SM Primaria-Bold">¿Qué es lo que más os
-          gusta?</span> 
-      </p></div>
-        <div class="instructions-col"><p>Podéis participar con un cartel o
-          con un vídeo.<br><br><span style="font-family:SM Primaria-Bold">¡Solo tenéis que enviarlo!</span>  </p></div>
+        <div id="instructions">
+          <div class="instructions-col">
+            <p>Trabajad como una agencia de
+              publicidad creando un anuncio.<br><br><span style="font-family:SM Primaria-Bold">¡Pensad un buen lema!</span></p>
+          </div>
+            <div class="instructions-col"><p>El tema: Vuestro entorno.
+              Pensad lo mejor de vuestra
+              localidad,<br><br><span style="font-family:SM Primaria-Bold">¿Qué es lo que más os
+                gusta?</span> 
+            </p></div>
+              <div class="instructions-col"><p>Podéis participar con un cartel o
+                con un vídeo.<br><br><span style="font-family:SM Primaria-Bold">¡Solo tenéis que enviarlo!</span>  </p></div>
+        </div>
   </div>
 <div id="services">
     <div class="clickable-div" onclick="showContent(1)"><h2>El tema</h2><svg id="plus-sign-2" class="plus-sign" viewBox="0 0 24 24">
@@ -132,7 +129,7 @@ background-position: center center; background-attachment: fixed;">
         DE ANDALUCÍA</h1>
       <img src="./resources/images/lapiz-footer.png">
     </footer>
- <script src="./index.js"></script> 
+    <script src="./index.js"></script> 
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();

@@ -11,205 +11,86 @@
          <a href="index.html"><img src="./resources/images/pencil@2x.png" alt="Logo" class="logo"></a> 
         </div>
         <div class="buttons">
-        <div class="nav-col col-2"><a href="index.html"><button>CERTAMEN</button></a></div>
-        <div class="nav-col col-3"><button>PARTICIPA</button></div>
-        <div class="nav-col col-3"><a href="formulario.html"><button>FORMULARIO</button></a></div>
+        <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="#services"><button>CERTAMEN</button></a></div>
+        <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="formulario.html"><button>PARTICIPA</button></a></div>
         </div>
       </nav>
-      <div style="background-color: #552FEA; padding:5em; ">
-        <div class="wrap-contact100">
-            <div class="container-formtitles">
-                <span class="formTitle">
-                    Introduce tus datos
-                </span><br>
-                <p style="width: 44%;
-                margin: 0 auto;
-                text-transform: initial;">
-                    Por favor, selecciona tantas opciones como te sea necesario en los campos etapa, cargo, curso y asignatura.
-                </p>
-            </div>
-            <form id="firstblock" class="contact100-form validate-form">
-                <input id="ln" class="input100" type="text" name="ln" hidden="" value="ES">
-                <div class="toPost" id="toPost" hidden=""></div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Nombre es requerido">
-                    <span class="label-input100">Nombre<i class="inputRequired">*</i></span>
-                    <input id="nombre" class="input100" type="text" name="nombre">
-                    <p id="nombre-alert" class="requiredField">Este campo es requerido</p>
+      <div style="background-color: #552FEA; padding: 20px 2em;">
+        <div class="container-contact100 beforeSubmit">
+            <div class="wrap-contact100">
+                <div class="container-formtitles">
+                    <h1 class="formTitle">
+                        Introduce tus datos
+                    </h1>
+                    <span>
+                        Por favor, selecciona tantas opciones como te sea necesario en los campos etapa, cargo, curso y asignatura.
+                    </span>
                 </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Apellido es requerido">
-                    <span class="label-input100">Apellido<i class="inputRequired">*</i></span>
-                    <input id="apellido" class="input100" type="text" name="apellido">
-                    <p id="apellido-alert" class="requiredField">Este campo es requerido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo DNI es requerido">
-                    <span class="label-input100">DNI<i class="inputRequired">*</i></span>
-                    <input id="dni" class="input100" type="text" name="dni">
-                    <p id="dni-alert" class="requiredField">Este campo es requerido</p>
-                    <p id="dni-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Correo es requerido">
-                    <span class="label-input100">Correo electrónico<i class="inputRequired">*</i></span>
-                    <input id="correo" class="input100" type="email" name="correo">
-                    <p id="correo-alert" class="requiredField">Este campo es requerido</p>
-                    <p id="correo-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Teléfono es requerido">
-                    <span class="label-input100">Teléfono<i class="inputRequired">*</i></span>
-                    <input id="telefono" class="input100" type="text" name="movil">
-                    <p id="telefono-alert" class="requiredField">Este campo es requerido</p>
-                    <p id="telefono-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Código Postal es requerido">
-                    <span class="label-input100">Código postal<i class="inputRequired">*</i></span>
-                    <input id="codigopostal" class="input100" type="text" name="codigopostal" maxlength="5">
-                    <p id="codigopostal-alert" class="requiredField">Este campo es requerido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Centro es requerido">
-                    <span class="label-input100">Centro<i class="inputRequired">*</i></span>
-                    <select class="input100-novalidate custom-select" id="centro" disabled=""></select>
-                    <input id="centro-result" class="input100" type="text" name="centro-result" hidden="">
-                    <p id="centro-result-alert" class="requiredField">Este campo es requerido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Etapa es requerido">
-                    <span class="label-input100">Etapas<i class="inputRequired">*</i></span>
-                    <select class="input100-novalidate custom-select" id="etapa" aria-placeholder="Seleccione una etapa..."><option id="titulo" value="titulo" disabled="" selected="">Seleccione una etapa...</option><option id="1" value="2">Infantil</option><option id="2" value="8">Primaria</option><option id="3" value="9">ESO</option><option id="4" value="11">Bachillerato</option></select>
-                    <input id="etapa-result" class="input100" type="text" name="etapa-result" hidden="">
-                    <p id="etapa-result-alert" class="requiredField">Este campo es requerido</p>
-                </div>
-            </form>
-            <form id="secondblock" class="contact100-form">
-                <div class="wrap-input100  rs1-wrap-input100 beforesubmit">
-                    <span class="label-input100">Cargos</span>
-                    <select class="input100 custom-select" id="cargo" style="display: none;">
-                    <option id="1" value="CA146">Administrativo/a</option><option id="2" value="CA84">Coordinador/a</option><option id="3" value="CA14">Director/a</option><option id="4" value="CA89">Jefe/a de departamento</option><option id="5" value="CA17">Jefe/a de Estudios</option><option id="6" value="CA122">Orientador/a</option><option id="7" value="CA18">Profesor/a</option><option id="8" value="CA116">Propietario/a</option><option id="9" value="CA140">Responsable Biblioteca</option><option id="10" value="CA150">Responsable Compras</option><option id="11" value="CA149">Responsable Formación</option><option id="12" value="CA137">Responsable Marketing</option><option id="13" value="CA19">Responsable Pastoral</option><option id="14" value="CA112">Responsable Titularidad</option><option id="15" value="CA21">Secretario/a</option></select>
-        <div id="iconic-HDbcS6vEizDFiUTpCXY3" class="multiselect__container">
-        <div class="multiselect__wrapper">
-        <input class="multiselect__input" placeholder="Selecciona un cargo...">
-        </div>
-        <span style="display: none;" class="multiselect__clear-btn">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z" fill="currentColor"></path>
-        </svg>
-        </span>
-        
-        <div class="multiselect__options">
-        <ul>
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-        
-        
-        <li data-value="CA146" class="">Administrativo/a</li><li data-value="CA84" class="">Coordinador/a</li><li data-value="CA14">Director/a</li><li data-value="CA89">Jefe/a de departamento</li><li data-value="CA17">Jefe/a de Estudios</li><li data-value="CA122">Orientador/a</li><li data-value="CA18">Profesor/a</li><li data-value="CA116">Propietario/a</li><li data-value="CA140">Responsable Biblioteca</li><li data-value="CA150">Responsable Compras</li><li data-value="CA149">Responsable Formación</li><li data-value="CA137">Responsable Marketing</li><li data-value="CA19">Responsable Pastoral</li><li data-value="CA112">Responsable Titularidad</li><li data-value="CA21">Secretario/a</li></ul>
-        </div>
-        </div>
-        
-                    <input id="cargo-result" class="input100" type="text" name="cargo-result" hidden="">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <!--<div id="subcargo-container" class="wrap-input100  rs1-wrap-input100 beforesubmit">
-                    <span class="label-input100">Subcargo</span>
-                    <select class="input100 custom-select" id="subcargo" disabled>
-                    </select>
-                    <input id="subcargo-result" class="input100" type="text" name="subcargo-result" hidden>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 subcargo-containers">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100 subcargo-containers">
-                </div>-->
-                <div id="first-ciclos-container" class="wrap-input100 rs1-wrap-input100 beforesubmit" style="display: none;">
-                    <input id="ciclo-result" class="input100" type="text" name="ciclo-result" hidden="" disabled="" style="display: none;">
-                    <span id="cicloLabel" class="label-input100" style="display: none;">Areas</span>
-                </div>
-                <div id="second-ciclos-container" class="wrap-input100 rs1-wrap-input100" style="display: none;">
-                    <span class="label-input100" style="display: none;">&nbsp;</span>
-                </div>
-                <div id="third-ciclos-container" class="wrap-input100 rs1-wrap-input100" style="display: none;">
-                    <span class="label-input100" style="display: none;">&nbsp;</span>
-                </div>
-                <div id="curso-container" class="wrap-input100 rs1-wrap-input100 beforesubmit" style="display: none;">
-                    <span class="label-input100">Cursos</span>
-                    <select class="input100 custom-select" id="curso" disabled="" aria-placeholder="Seleccione un curso..."></select>
-                    <input id="curso-result" class="input100" type="text" name="curso-result" hidden="">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div id="first-materias-container" class="wrap-input100 rs1-wrap-input100 beforesubmit" style="display: none;">
-                    <span id="materiaLabel" class="label-input100">Materias</span>
-                    <input id="materia-text" class="input100" type="text" name="materia-text" hidden="">
-                    <input id="materia-id" class="input100" type="text" name="materia-id" hidden="">
-                    <input id="logs" class="input100" type="text" name="logs" hidden="">
-                </div>
-                <div id="second-materias-container" class="wrap-input100 rs1-wrap-input100" style="display: none;">
-                    <span class="label-input100">&nbsp;</span>
-                </div>
-                <div id="third-materias-container" class="wrap-input100 rs1-wrap-input100" style="display: none;">
-                    <span class="label-input100">&nbsp;</span>
-                </div>
-                <div id="cargosSelected-container" class="wrap-input100 beforesubmit" style="display: none;">
-                    <span id="cargosSelected" class="label-input100">Cargos seleccionados</span>
-                </div>
-            </form>
-            <form id="thirdblock" class="contact100-form validate-form">
-                <div class="wrap-input100 validate-input beforesubmit checkboxes-bottom">
-                    <label class="container-checkbox">He leído y acepto la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">Política de privacidad</a> y las <a class="politicas" href="https://cloud.e.grupo-sm.com/eecc22-bases-promocion">condiciones de la promoción</a>.<i class="inputRequired">*</i>
-                        <input id="politicas" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <p id="politicas-alert" class="requiredField">Este campo es requerido</p>
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div class="wrap-input100 rs1-wrap-input100">
-                </div>
-                <div class="aviso-container wrap-input100 validate-input beforesubmit">
-                    <span class="aviso-title">AVISO DE PRIVACIDAD</span>
-                   <span class="aviso-subtitles">Responsable del tratamiento:</span> Fundación Santa María. <span class="aviso-subtitles">Finalidad:</span> gestión de esta actividad o campaña y envío de información sobre productos y servicios de grupo SM. <span class="aviso-subtitles">Derechos:</span> puedes acceder, rectificar y suprimir los datos, así como ejercitar otros derechos legales, dirigiéndote por escrito al <a class="politicas" href="https://contactodpo.grupo-sm.com/">Delegado de Protección de Datos del Grupo SM</a>. Para más información, consulta la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">política de privacidad</a>.
-                                        </div>
-                <div class="row container-contact100-form-btn beforesubmit">
-                    <div class="col text-center">
-                        <div class="loader" id="loader"></div>
-        
-                        <button id="enviar" class="btn btn-default contact100-form-btn" href="#formTitle">Enviar datos</button>
-                        <p id="form-alert" style="padding-top: 10px" class="requiredField">Revisa los datos del formulario</p>
+                <form id="firstblock" class="contact100-form validate-form">
+                    <input id="ln" class="input100" type="text" name="ln" hidden="" value="ES">
+                    <div class="toPost" id="toPost" hidden=""></div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Nombre es requerido">
+                        <span class="label-input100">Nombre<i class="inputRequired">*</i></span>
+                        <input id="nombre" class="input100" type="text" name="nombre">
+                        <p id="nombre-alert" class="requiredField">Este campo es requerido</p>
                     </div>
-                </div>
-            </form>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Apellido es requerido">
+                        <span class="label-input100">Apellido<i class="inputRequired">*</i></span>
+                        <input id="apellido" class="input100" type="text" name="apellido">
+                        <p id="apellido-alert" class="requiredField">Este campo es requerido</p>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo DNI es requerido">
+                        <span class="label-input100">DNI<i class="inputRequired">*</i></span>
+                        <input id="dni" class="input100" type="text" name="dni">
+                        <p id="dni-alert" class="requiredField">Este campo es requerido</p>
+                        <p id="dni-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Correo es requerido">
+                        <span class="label-input100">Correo electrónico<i class="inputRequired">*</i></span>
+                        <input id="correo" class="input100" type="email" name="correo">
+                        <p id="correo-alert" class="requiredField">Este campo es requerido</p>
+                        <p id="correo-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Código Postal es requerido">
+                        <span class="label-input100">Código postal<i class="inputRequired">*</i></span>
+                        <input id="codigopostal" class="input100" type="text" name="codigopostal" maxlength="5">
+                        <p id="codigopostal-alert" class="requiredField">Este campo es requerido</p>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Centro es requerido">
+                        <span class="label-input100">Centro<i class="inputRequired">*</i></span>
+                        <select class="input100-novalidate custom-select" id="centro"></select>
+                        <input id="centro-result" class="input100" type="text" name="centro-result" hidden="">
+                        <p id="centro-result-alert" class="requiredField">Este campo es requerido</p>
+                    </div>
+                    
+                </form>
+                
+                <form id="thirdblock" class="contact100-form validate-form">
+                    <div class="wrap-input100 validate-input beforesubmit checkboxes-bottom">
+                        <label class="container-checkbox">He leído y acepto la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">Política de privacidad</a> y las <a class="politicas" href="https://cloud.e.grupo-sm.com/eecc22-bases-promocion">condiciones de la promoción</a>.<i class="inputRequired">*</i>
+                            <input id="politicas" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p id="politicas-alert" class="requiredField">Este campo es requerido</p>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100">
+                    </div>
+                    <div class="aviso-container wrap-input100 validate-input beforesubmit">
+                        <span class="aviso-title">AVISO DE PRIVACIDAD</span>
+                       <span class="aviso-subtitles">Responsable del tratamiento:</span> Fundación Santa María. <span class="aviso-subtitles">Finalidad:</span> gestión de esta actividad o campaña y envío de información sobre productos y servicios de grupo SM. <span class="aviso-subtitles">Derechos:</span> puedes acceder, rectificar y suprimir los datos, así como ejercitar otros derechos legales, dirigiéndote por escrito al <a class="politicas" href="https://contactodpo.grupo-sm.com/">Delegado de Protección de Datos del Grupo SM</a>. Para más información, consulta la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">política de privacidad</a>.
+                                            </div>
+                    <div class="row container-contact100-form-btn beforesubmit">
+                        <div class="col text-center">
+                            <div class="loader" id="loader"></div>
+
+                            <button id="enviar" class="btn btn-default contact100-form-btn" href="#formTitle">Enviar datos</button>
+                            <p id="form-alert" style="padding-top: 10px" class="requiredField">Revisa los datos del formulario</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         </div>
 
