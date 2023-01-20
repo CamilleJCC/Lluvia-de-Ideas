@@ -193,9 +193,8 @@ padding: 10px;
 
 .plus-sign {
   /* styles for the SVG plus sign */
-  width: 20px;
-  height: 20px;
-  fill: rgb(255, 255, 255);
+  width: 44x;
+  height: 44px;
   transition: transform 0.5s ease;
 }
 
@@ -294,7 +293,6 @@ width:33%;
   margin: 0 auto;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 5em;
 }
 
 #bases h1{
@@ -429,22 +427,27 @@ footer img{
   
 .mark-blue {
   color: #00B0A9;
-  font-family: SM Primaria-Bold;
+  fill: #00B0A9;
 }
 
 .mark-pink {
   color: #FB00A7;
-  font-family: SM Primaria-Bold;
+  fill: #FB00A7;
 }
 
 .mark-green {
   color: #77EE79;
-  font-family: SM Primaria-Bold;
+  fill: #77EE79;
 }
 
 .mark-purple {
   color: #552FEA;
-  font-family: SM Primaria-Bold;
+  fill: #552FEA;
+}
+
+.mark-yellow {
+  color: #D3D800;
+  fill: #D3D800;
 }
 
 /* form */
