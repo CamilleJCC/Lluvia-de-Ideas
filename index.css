@@ -813,10 +813,11 @@ label {
 canvas {
   overflow-y: hidden;
   overflow-x: hidden;
-  width: 100%;
+  width: 140%;
   margin-top: -2em;
   position: absolute;
   z-index: -10;
+  height: 140%;
 }
 
 div.aviso-container.wrap-input100.validate-input.beforesubmit{
