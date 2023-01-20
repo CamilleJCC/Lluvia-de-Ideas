@@ -216,23 +216,23 @@ padding: 10px;
 .pink-popup{
   width: 445px;
   color: white;
-  transform: rotate(334deg);
+  transform: rotate(27deg);
   text-align: center;
   background: #FB00A7;
   padding: 40px;
-  position: absolute;
-  translate: 6em -13em;
+ /* position: absolute;
+ translate: 6em -13em;*/
 }
 
 .yellow-popup{
   width: 445px;
   color: white;
-  transform: rotate(27deg);
+  transform: rotate(334deg);
   text-align: center;
   background:#D3D800;
   padding: 40px;
-  position: absolute;
-  translate: -112% -97%;
+  /*position: absolute;
+  translate: -112% -97%;*/
 }
 
 .green-popup{
@@ -242,8 +242,8 @@ padding: 10px;
   text-align: center;
   background: #77EE79;
   padding: 40px;
-  position: absolute;
-  translate: -20em 4em;
+  /*position: absolute;
+  translate: -20em 4em;*/
   z-index: -1;
 }
 
@@ -282,6 +282,7 @@ width:33%;
 #bases h1{
   text-align: left;
   font-size: 80px;
+  font-family: 'SM Primaria-Bold';
 }
 
 #bases h3 {
@@ -813,7 +814,7 @@ canvas {
   overflow-y: hidden;
   overflow-x: hidden;
   width: 100%;
-  margin-top: -4em;
+  margin-top: -2em;
   position: absolute;
   z-index: -10;
 }

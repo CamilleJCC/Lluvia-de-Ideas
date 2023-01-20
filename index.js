@@ -45,22 +45,27 @@ const possibleColors = [
  function confettiParticle() {
    this.x = Math.random() * W; // x
    this.y = Math.random() * H - H; // y
-   this.r = 120;
+   this.r = 100;
    this.d = Math.random() * maxConfettis + 11;
-   this.color =
-     possibleColors[Math.floor(Math.random() * possibleColors.length)];
-   this.tilt = Math.floor(Math.random() * 33) - 11;
-   this.tiltAngleIncremental = Math.random() * -0.02 + 0.02;
+   this.height = randomFromTo(1,90); // new height variable
+   this.color = possibleColors[Math.floor(Math.random() * possibleColors.length)];
+   this.tilt = Math.random() * (180) - 90; // tilt to random numbers
+   this.tiltAngleIncremental = Math.random() * 0.05 + -0.05;
    this.tiltAngle = 0;
+   this.rotation = Math.random() * (360) - 180; // rotation of confetti
  
    this.draw = function() {
+     context.save();
+     context.translate(this.x + this.tilt + this.d / 3, this.y);
+     context.rotate(this.rotation);
      context.beginPath();
      context.strokeStyle = this.color;
-     context.lineWidth = this.r / 2;
-     context.moveTo(this.x + this.tilt + this.d / 3, this.y);
-     context.lineTo(this.x + this.tilt, this.y + this.tilt + this.d / 10);
+     context.lineWidth = this.r / 9;
+     context.moveTo(0,0);
+     context.lineTo(this.tilt, this.height);
  
-     return context.stroke();
+     context.stroke();
+     context.restore();
    };
  }
  
@@ -82,9 +87,7 @@ const possibleColors = [
      particle = particles[i];
  
      particle.tiltAngle += particle.tiltAngleIncremental;
-     particle.y += (Math.cos(particle.d) + 3 + particle.d / 5) / 5;
- 
-     particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+     particle.y += (Math.cos(particle.d) + 5 + particle.d / 4) / 4;
  
      if (particle.y <= H) remainingFlakes++;
  
@@ -93,7 +96,6 @@ const possibleColors = [
      if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
        particle.x = Math.random() * W;
        particle.y = -30;
-       particle.tilt = Math.floor(Math.random() * 10) - 20;
      }
    }
  
@@ -103,6 +105,7 @@ const possibleColors = [
  window.addEventListener(
    "resize",
    function() {
+
      W = window.innerWidth;
      H = window.innerHeight;
      canvas.width = window.innerWidth;
