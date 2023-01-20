@@ -21,23 +21,21 @@ function showContent(tabNum) {
     }
   }
 }
-let marquee = document.querySelector(".marquee p");
-marquee.style.transform = "translateX(50%)";
+
 
 let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-const maxConfettis = 160;
+const maxConfettis = 40;
 const particles = [];
 
 const possibleColors = [
   "#00B0A9",
-   "#552FEA",
-   "#FB00A7",
-   "#77EE79",
-   "#ED1B2E",
-   "#D3D800"
+  "#552FEA",
+  "#D3D800",
+  "#77EE79",
+  "#FB00A7"
  ];
  
  function randomFromTo(from, to) {
@@ -47,19 +45,19 @@ const possibleColors = [
  function confettiParticle() {
    this.x = Math.random() * W; // x
    this.y = Math.random() * H - H; // y
-   this.r = 60;
+   this.r = 120;
    this.d = Math.random() * maxConfettis + 11;
    this.color =
      possibleColors[Math.floor(Math.random() * possibleColors.length)];
    this.tilt = Math.floor(Math.random() * 33) - 11;
-   this.tiltAngleIncremental = Math.random() * 0.03 + 0.01;
+   this.tiltAngleIncremental = Math.random() * -0.02 + 0.02;
    this.tiltAngle = 0;
  
    this.draw = function() {
      context.beginPath();
      context.strokeStyle = this.color;
-     context.lineWidth = this.r / 4;
-     context.moveTo(this.x + this.tilt + this.d / 5, this.y);
+     context.lineWidth = this.r / 2;
+     context.moveTo(this.x + this.tilt + this.d / 3, this.y);
      context.lineTo(this.x + this.tilt, this.y + this.tilt + this.d / 10);
  
      return context.stroke();
@@ -123,6 +121,8 @@ const possibleColors = [
  canvas.height = H;
  Draw();
  
+ 
+
  
  
  

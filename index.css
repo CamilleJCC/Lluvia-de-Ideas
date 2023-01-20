@@ -37,15 +37,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 5em;
-    /* position: fixed;
-    top: 0;
-    width: 91vw; */
 }
 
 .nav-col.col-2 {
     display: flex;
     justify-content: center;
 }
+
 
 .nav-col.col-2 button {
   background-color: white;
@@ -106,13 +104,18 @@ button {
   }
 
   .buttons{
+    right: 5em;
     display: flex;
     gap: 20px;
+    position: fixed;
+    top: 51px;
+    width: 100%;
+    justify-content: flex-end;
   }
    
   p, 
   li {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.3em;
   }
    
@@ -122,10 +125,11 @@ button {
   }
 
 h1 {    
-   font-size: 30px;
-   text-align: center;
-   color: white;
-   font-family: SM Primaria-Bold;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: 'SM PRIMARIA-LIGHT';
+  text-transform: uppercase;
 }
 
 h2{
@@ -219,30 +223,47 @@ height: 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
-  /*margin-top: 10em; */
-  margin-bottom: 20em; 
+  gap: 40px;
 }
 
 .brand-claim img{
   width: 54vw;
 }
 
-.purple-popup:hover{
 
-}
 .purple-popup{
-  width: 305px;
+  width: 412px;
   color: white;
   transform: rotate(-15deg);
   text-align: center;
-  top: 82%;
-  right: 25%;
   background: rgb(85, 47, 234);
   padding: 40px;
-  animation:jackInTheBox;
-  animation-duration: 2s; /* don't forget to set a duration! */
+margin-top:3em;
+
 }
+
+.pink-popup{
+  width: 445px;
+  color: white;
+  transform: rotate(15deg);
+  text-align: center;
+  background: #FB00A7;
+  padding: 40px;
+  position: absolute;
+  translate: -112% -97%;
+}
+
+.yellow-popup{
+  width: 445px;
+  color: white;
+  transform: rotate(332deg);
+  text-align: center;
+  background: yellow;
+  padding: 40px;
+  position: absolute;
+  translate: 6em -12em;
+}
+
 
 
 .purple-popup.aos-init {
@@ -315,7 +336,7 @@ h1.bases-col-3{
 }
 
 footer {
-  background-color: #552FEA;
+  background-color: #00B0A9;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -323,41 +344,72 @@ footer {
   padding: 5em;
 }  
 
+#participa{
+  background-color: #00B0A9;
+    padding: 10em 5em 3em;
+    border-top: solid white;
+}
+
 footer img{
   width: 500px;
 }
 
-.marquee-container {
-  overflow: hidden;
-  width: 65%;
-  background: white;
-  padding: 10px;
-  color: black;
-  border-radius: 30px;
-  margin: 0 auto;
+.marquee-wrapper{
+  text-align:center;
 }
-
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
+.marquee-wrapper .container{
+  overflow:hidden;
+}
+.marquee-inner span{
+  float:left;
+  width:50%;
+}
+.marquee-wrapper .marquee-block{
+  --total-marquee-items: 8;
+  height: 48px;
+  width: calc(200px * (var(--total-marquee-items)));
+  box-sizing: border-box;
   position: relative;
+  margin: 20px auto;
 }
 
-.marquee p {
+.marquee-inner{
+  display: block;
+  width: 200%;
+  position: absolute;
+}
+.marquee-inner p{
+  font-weight: 800;
+  font-size: 25px;
+  font-family: SM Primaria-Bold;
+}
+.marquee-inner.to-left{
+  animation: marqueeLeft 12s linear infinite;
+}
+
+.marquee-item{
+  width: 180px;
+  height: auto;
   display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;
-  animation: marquee 50s linear infinite;
-  font-family: SM Primaria-Bold ;
+  margin: 0 10px;
+  float: left;
+  transition: all .2s ease-out;
 }
 
-@keyframes marquee {
+@keyframes marqueeLeft{
   0% {
-    transform: translateX(-25%);
+    left: 0;
   }
   100% {
-    transform: translateX(-100%);
+    left: -100%;
+  }
+}
+@keyframes marqueeRight{
+  0% { 
+    left: -100%; 
+  }
+  100% {
+   left: 0; 
   }
 }
 
@@ -460,7 +512,29 @@ input.input100 {
   position: relative;
   margin: 0 auto;
   padding: 2em;
-  border: solid white;
+}
+
+input::file-selector-button {
+  background-color: white;
+  border-radius: 28px;
+  color: #00B0A9;
+  border: none;
+  transition: all 0.25s;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: SM Primaria-Bold;
+  margin-right: 20px;
+}
+input::file-selector-button:hover {
+  background: #00B0A9;
+  color: white;
+}
+
+.file-buttons{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .rs1-wrap-input100 {
@@ -752,13 +826,13 @@ canvas {
   overflow-y: hidden;
   overflow-x: hidden;
   width: 100%;
-  margin: 0;
+  margin-top: -4em;
   position: absolute;
   z-index: -10;
 }
 
 div.aviso-container.wrap-input100.validate-input.beforesubmit{
-  width: 60%;
+  width: 80%;
 }
 
 
