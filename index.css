@@ -45,15 +45,6 @@
 }
 
 
-.nav-col.col-2 button {
-  background-color: white;
-  color: #00b0a9;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: 'SM Primaria-Bold';
-}
 .nav-col.col-2 button:hover{
   background-color: #552FEA;
   color: white;
@@ -69,15 +60,6 @@
   justify-content: center;
 }
 
-.nav-col.col-3 button {
-  background-color: white;
-  color: #00b0a9;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: 'SM Primaria-Bold';
-}
 
 .nav-col.col-4 img {
   position: fixed;
@@ -99,7 +81,10 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   font-family: 'SM Primaria-Bold';
-  width: 160px!important;
+  width: 162px!important;
+  height: 44px;
+  font-size: 20px;
+  border-radius: 28px;
 }
   
   .logo {
@@ -210,16 +195,6 @@ padding: 10px;
   height: 0px;
   overflow: hidden;
   transition: transform 0.5s ease, height 0.5s ease, visibility 0.5s ease;
-}
-
-button {
-  /* UI Properties */
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 28px;
-opacity: 1;
-border: none;
-width: 130px;
-height: 40px;
 }
 
 .brand-claim {
