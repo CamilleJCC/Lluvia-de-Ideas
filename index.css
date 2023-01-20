@@ -45,22 +45,6 @@
 }
 
 
-.nav-col.col-2 button:hover{
-  background-color: #552FEA;
-  color: white;
-}
-
-.nav-col.col-3 button:hover{
-  background-color: #552FEA;
-  color: white;
-}
-
-.nav-col.col-3 {
-  display: flex;
-  justify-content: center;
-}
-
-
 .nav-col.col-4 img {
   position: fixed;
   max-width: 100px;
@@ -85,6 +69,11 @@ button {
   height: 44px;
   font-size: 20px;
   border-radius: 28px;
+}
+
+button:hover{
+  background-color: #FB00A7;
+  color: white;
 }
   
   .logo {
@@ -324,8 +313,8 @@ footer {
 
 #participa{
   background-color: #00B0A9;
-    padding: 10em 5em 3em;
-    border-top: solid white;
+  padding: 5em 5em 0em;
+  border-top: solid white;
 }
 
 footer img{
