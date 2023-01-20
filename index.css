@@ -189,47 +189,60 @@ padding: 10px;
 .brand-claim {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   gap: 40px;
+  height: 1126px;
 }
 
 .brand-claim img{
   width: 54vw;
+  z-index: 20;
 }
 
 
 .purple-popup{
   width: 412px;
   color: white;
-  transform: rotate(-15deg);
+  transform: rotate(346deg);
   text-align: center;
   background: rgb(85, 47, 234);
   padding: 40px;
-margin-top:3em;
-
+  margin-top: -2em;
 }
+
 
 .pink-popup{
   width: 445px;
   color: white;
-  transform: rotate(15deg);
+  transform: rotate(-12deg);
   text-align: center;
   background: #FB00A7;
   padding: 40px;
   position: absolute;
-  translate: -112% -97%;
+  translate: 6em -12em;
 }
 
 .yellow-popup{
   width: 445px;
   color: white;
-  transform: rotate(332deg);
+  transform: rotate(27deg);
   text-align: center;
-  background: yellow;
+  background:#D3D800;
   padding: 40px;
   position: absolute;
-  translate: 6em -12em;
+  translate: -112% -97%;
+}
+
+.green-popup{
+  width: 445px;
+  color: white;
+  transform: rotate(2deg);
+  text-align: center;
+  background: #77EE79;
+  padding: 40px;
+  position: absolute;
+  translate: -20em 3em;
+  z-index: -1;
 }
 
 
