@@ -123,10 +123,6 @@ const possibleColors = [
  canvas.width = W;
  canvas.height = H;
  Draw();
- 
- 
 
- 
- 
- 
+
  
