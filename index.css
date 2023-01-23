@@ -81,6 +81,7 @@ button:hover{
     width: 700px;
     height: auto;
     object-fit: contain;
+    z-index: 1000;
   }
 
   .buttons{
@@ -495,6 +496,10 @@ h1.bases-col-3{
     font-size: 80px;
 }
 
+.bases-col p {
+  font-size: 25px;
+}
+
 footer {
   background-color: #00B0A9;
   padding: 30px;
@@ -614,18 +619,17 @@ footer img{
 
 /* form */
 .container-contact100{
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-padding-top: 20px;
-padding-bottom: 20px;
-padding-left: 50px;
-padding-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 2em 5em;
+  border-radius: 28px;
+  background: #552FEA;
 }
 
 .requiredField{
