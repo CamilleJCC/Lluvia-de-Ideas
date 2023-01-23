@@ -195,10 +195,11 @@ padding: 10px;
   flex-direction: column;
   gap: 40px;
   height: 1126px;
+  padding-top: 4em;
 }
 
 .brand-claim img{
-  width: 48vw;
+  width: 42vw;
   z-index: 20;
 }
 
@@ -209,7 +210,7 @@ padding: 10px;
   position: relative;
   width: 500px;
   height: 500px;
-  margin: 0 auto;
+  margin: -20px auto;
 }
 
 .purple-popup {
