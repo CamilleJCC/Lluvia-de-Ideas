@@ -66,7 +66,7 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   font-family: 'SM Primaria-Bold';
-  width: 162px!important;
+  width: fit-content;
   height: 44px;
   font-size: 20px;
   border-radius: 28px;
@@ -685,13 +685,14 @@ input::file-selector-button {
   color: #00B0A9;
   border: none;
   transition: all 0.25s;
-  padding: 10px;
+  padding: 10px 20px;
   text-transform: uppercase;
   font-family: SM Primaria-Bold;
   margin-right: 20px;
+  font-size: 20px;
 }
 input::file-selector-button:hover {
-  background: #00B0A9;
+  background: #FB00A7;
   color: white;
 }
 
