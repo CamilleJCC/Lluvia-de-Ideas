@@ -22,7 +22,7 @@ let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-const maxConfettis = 50;
+const maxConfettis = 40;
 const particles = [];
 
 const possibleColors = [
@@ -40,9 +40,9 @@ const possibleColors = [
  function confettiParticle() {
    this.x = Math.random() * W; // x
    this.y = Math.random() * H - H; // y
-   this.r = 90;
+   this.r = 60;
    this.d = Math.random() * maxConfettis + 11;
-   this.height = randomFromTo(1,40); // new height variable
+   this.height = randomFromTo(20,60); // new height variable
    this.color = possibleColors[Math.floor(Math.random() * possibleColors.length)];
    this.tilt = Math.random() * (180) - 90; // tilt to random numbers
    this.tiltAngleIncremental = Math.random() * 0.05 + -0.05;
@@ -51,11 +51,11 @@ const possibleColors = [
  
    this.draw = function() {
      context.save();
-     context.translate(this.x + this.tilt + this.d / 3, this.y);
+     context.translate(this.x + this.tilt + this.d / 11, this.y);
      context.rotate(this.rotation);
      context.beginPath();
      context.strokeStyle = this.color;
-     context.lineWidth = this.r / 11;
+     context.lineWidth = this.r / 4;
      context.moveTo(0,0);
      context.lineTo(this.tilt, this.height);
  
@@ -82,7 +82,7 @@ const possibleColors = [
      particle = particles[i];
  
      particle.tiltAngle += particle.tiltAngleIncremental;
-     particle.y += (Math.cos(particle.d) + 5 + particle.d / 4) / 4;
+     particle.y += (Math.cos(particle.d) + 5 + particle.d / 6) / 6;
  
      if (particle.y <= H) remainingFlakes++;
  
