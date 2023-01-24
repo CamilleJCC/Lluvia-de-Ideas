@@ -62,22 +62,65 @@
   flex-direction: column;
 }
 
+.brand-claim{
+  height: 74vh!important;
+}
+
 .claim-grid{
     text-align: center;
     flex-direction: column;
     align-items: center;
+    gap: 2em!important;
 }
 .claim-grid h1{
   width: 100%!important;
     margin-top: 20px;
     text-align: center;
 }
-#instructions {
+
+p, 
+  li {
+    font-size: 2vh!important;
+  }
+
+.claim-grid-text{
+  gap: 0px!important;
   flex-direction: column;
 }
+
+.claim-grid img{
+  width: 80vw!important;
 }
 
+#instructions {
+  flex-direction: column;
+  gap: 131px;
+  margin-top: 16em!important;
+}
 
+#fechas{
+  padding: 0 5em;
+  width: 100%!important;
+}
+.fechas-mobile-hide {
+  visibility: hidden;
+  height: 0;
+}
+.fechas-mobile-show{
+  padding: 20px;
+  visibility: visible!important;
+  margin-top: 2em;
+}
+.pink-popup, .yellow-popup, .green-popup, .purple-popup{
+  width: 80vw!important;
+  margin: 0 auto;
+  padding: 50px!important;
+}
+}
+
+.fechas-mobile-show{
+  visibility: hidden;
+}
 
 .nav-col.col-2 {
     display: flex;
@@ -134,7 +177,7 @@ button:hover{
    
   p, 
   li {
-    font-size: 2.4vh;
+    font-size: 2.3vh;
     line-height: 1.3em;
   }
    
@@ -147,11 +190,10 @@ h1 {
   font-size: 2.4vh;
   color: white;
   font-family: 'SM PRIMARIA-LIGHT';
-  text-transform: uppercase;
 }
 
 h2{
-  font-size:50px;
+  font-size:5vh;
   text-transform: uppercase;
   color: white;
 }
@@ -176,7 +218,7 @@ padding: 10px;
   /* styles for the container div */
   display: flex;
   flex-direction: column;
-  margin-top: 52px;
+  margin-top: 5em;
 }
 
 .clickable-div {
@@ -236,18 +278,42 @@ padding: 10px;
 }
 
 .claim-grid img{
-  width: 42vw;
+  width: 38vw;
   z-index: 20;
 }
 
 .claim-grid {
   display: flex;
-  gap: 25%;
+  gap: 5em;
   padding: 20px 5em;
 }
 
+.claim-grid h1{
+  width: 55%;
+  margin-top: 20px;
+  text-transform: inherit;
+}
 
+.claim-grid p{
+  width: 23%;
+  margin-top: 20px;
+}
 
+.claim-grid-text{
+gap: 20px;
+display: flex;
+justify-content: flex-end;
+}
+
+#fechas {
+  width: 57%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#fechas h2 {
+  text-transform: inherit;
+}
 
 .container-popup {
   position: relative;
