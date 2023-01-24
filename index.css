@@ -219,7 +219,7 @@ padding: 10px;
 }
 
 .claim-grid p{
-  width: 23%;
+  width: 30%;
   margin-top: 20px;
 }
 
@@ -885,6 +885,8 @@ canvas {
 div.aviso-container.wrap-input100.validate-input.beforesubmit{
   width: 80%;
 }
+
+
 
 
 @media screen and (max-width:1000px) {
