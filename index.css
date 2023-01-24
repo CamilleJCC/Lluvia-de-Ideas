@@ -102,7 +102,7 @@ button:hover{
    
   p, 
   li {
-    font-size: 2.3vh;
+    font-size: 3vh;
     line-height: 1.3em;
   }
    
@@ -288,7 +288,7 @@ justify-content: flex-end;
 
 
 .pink-popup{
-  width: 459px;
+  width: 547px;
   color: white;
   text-align: center;
   background: #FB00A7;
@@ -297,7 +297,7 @@ justify-content: flex-end;
 }
 
 .yellow-popup{
-  width: 459px;
+  width: 547px;
   color: white;
   text-align: center;
   background:#D3D800;
@@ -306,7 +306,7 @@ padding: 40px;
 }
 
 .green-popup{
-  width: 459px;
+  width: 547px;
   color: white;
   text-align: center;
   background: #77EE79;
@@ -350,7 +350,7 @@ width:33%;
 
 #bases h1{
   text-align: left;
-  font-size: 11vh;
+  font-size: 9vh;
   font-family: 'SM Primaria-Bold';
 }
 
