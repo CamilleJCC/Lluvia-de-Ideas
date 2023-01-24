@@ -36,9 +36,48 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5em 0px;
-    background: #00B0A9;
+    padding: 20px 5em;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
+
+@media screen and (max-width: 1000px) {
+ .fixed-nav .logo {
+    display: none;
+  }
+.fixed-nav .buttons {
+    display: none;
+  }
+#canvas {
+    width: 100%!important;
+    height: 100%;
+  }
+.bases-col {
+  width: 100%!important;
+}
+.bases-container{
+  width: 100%;
+  flex-direction: column;
+}
+
+.claim-grid{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.claim-grid h1{
+  width: 100%!important;
+    margin-top: 20px;
+    text-align: center;
+}
+#instructions {
+  flex-direction: column;
+}
+}
+
+
 
 .nav-col.col-2 {
     display: flex;
@@ -59,8 +98,8 @@
 
 
 button {
-  background-color: white;
-  color: #00b0a9;
+  background-color: #552FEA;
+  color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -78,26 +117,24 @@ button:hover{
 }
   
   .logo {
-    width: 700px;
+    width: 120px;
     height: auto;
     object-fit: contain;
     z-index: 1000;
   }
 
   .buttons{
-    right: 11em;
+    right: 5em;
     display: flex;
     gap: 20px;
-    position: fixed;
-    top: 51px;
     width: 100%;
     justify-content: flex-end;
     z-index: 30;
-  }
+}
    
   p, 
   li {
-    font-size: 20px;
+    font-size: 2.4vh;
     line-height: 1.3em;
   }
    
@@ -107,8 +144,7 @@ button:hover{
   }
 
 h1 {    
-  font-size: 25px;
-  text-align: center;
+  font-size: 2.4vh;
   color: white;
   font-family: 'SM PRIMARIA-LIGHT';
   text-transform: uppercase;
@@ -194,13 +230,20 @@ padding: 10px;
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  height: 1126px;
-  padding-top: 4em;
+  height: 100vh;
+  padding: 8em 0em 0em;
+  margin-bottom: 5em;
 }
 
-.brand-claim img{
+.claim-grid img{
   width: 42vw;
   z-index: 20;
+}
+
+.claim-grid {
+  display: flex;
+  gap: 25%;
+  padding: 20px 5em;
 }
 
 
@@ -214,8 +257,9 @@ padding: 10px;
 }
 
 .purple-popup {
-  width: 412px;
+  width: 459px;
   color: white;
+  z-index: -1;
   transform: rotate(346deg);
   text-align: center;
   background: rgb(85, 47, 234);
@@ -223,17 +267,8 @@ padding: 10px;
   transition: transform 0.2s ease-in-out;
   display: inline-block;
   margin: 0 0.5rem;
-  position: absolute;
   -webkit-animation: purplePopup 3.5s;
   animation: purplePopup 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-.purple-popup:hover {
-  -webkit-animation: purplePopupHover 3.5s;
-  animation: purplePopupHover 3.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
@@ -242,7 +277,7 @@ padding: 10px;
 
 @keyframes purplePopup {
   0% {
-    transform: translateY(0) rotate(-15deg) ;
+    transform: translateY(0) rotate(-15deg);
 }
 50% {
   transform: translatey(-10px) rotate(-15deg);
@@ -253,172 +288,34 @@ padding: 10px;
 }
 }
 
-@keyframes purplePopupHover {
-0% {
-    transform: translateY(0) rotate(-15deg) scale(1) ;
-}
-50% {
-  transform: translatey(-10px) rotate(-15deg)  scale(1.15);
-}
-
-100% {
-  transform: translateY(0) rotate(-15deg)  scale(1);
-}
-}
 
 
 .pink-popup{
-  width: 445px;
+  width: 459px;
   color: white;
   text-align: center;
   background: #FB00A7;
   padding: 40px;
-  translate: 10em 16em;
- position: absolute;
- -webkit-animation: pinkPopup 3.5s;
- animation: pinkPopup 3.5s;
- -webkit-animation-iteration-count: infinite;
- animation-iteration-count: infinite;
- -webkit-animation-timing-function: ease-in-out;
- animation-timing-function: ease-in-out;
- 
-}
-
-.pink-popup:hover {
-  -webkit-animation: pinkPopupHover 3.5s;
-  animation: pinkPopupHover 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes pinkPopup{
-  0% {
-    transform: translateY(0) rotate(27deg);
-}
-50% {
-  transform: translatey(-40px) rotate(27deg);
-}
-
-100% {
-  transform: translateY(0) rotate(27deg);
-}
-}
-
-@keyframes pinkPopupHover{
-  0% {
-    transform: translateY(0) rotate(27deg) scale(1) ;
-}
-50% {
-  transform: translatey(-40px) rotate(27deg)  scale(1.15);
-}
-
-100% {
-  transform: translateY(0) rotate(27deg)  scale(1);
-}
+ transform: rotate(-10deg);
 }
 
 .yellow-popup{
-  width: 445px;
+  width: 459px;
   color: white;
   text-align: center;
   background:#D3D800;
-  padding: 40px;
-  translate: -8em 17em;
-  position: absolute;
-  -webkit-animation: yellowPopup 3.5s;
-  animation: yellowPopup 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-.yellow-popup:hover {
-  -webkit-animation: yellowPopupHover 3.5s;
-  animation: yellowPopupHover 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes yellowPopup{
-  0% {
-    transform: translateY(0) rotate(334deg);
-}
-50% {
-  transform: translatey(-20px) rotate(334deg);
-}
-
-100% {
-  transform: translateY(0) rotate(334deg);
-}
-}
-
-@keyframes yellowPopupHover{
-  0% {
-    transform: translateY(0) rotate(334deg) scale(1) ;
-}
-50% {
-  transform: translatey(-20px) rotate(334deg)  scale(1.15);
-}
-
-100% {
-  transform: translateY(0) rotate(334deg)  scale(1);
-}
+padding: 40px;
+  transform: rotate(-5deg);
 }
 
 .green-popup{
-  width: 445px;
+  width: 459px;
   color: white;
   text-align: center;
   background: #77EE79;
   padding: 40px;
-  translate: 0em 13em;
   z-index: -1;
-  position: absolute;
-  -webkit-animation: greenPopup 3.5s;
-  animation: greenPopup 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-.green-popup:hover {
-  -webkit-animation: greenPopupHover 3.5s;
-  animation: greenPopupHover 3.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes greenPopup{
-  0% {
-    transform: translateY(0) rotate(2deg);
-}
-50% {
-  transform: translatey(10px) rotate(2deg);
-}
-
-100% {
-  transform: translateY(0) rotate(2deg);
-}
-}
-
-@keyframes greenPopupHover{
-  0% {
-    transform: translateY(0) rotate(2deg) scale(1) ;
-}
-50% {
-  transform: translatey(10px) rotate(2deg)  scale(1.15);
-}
-
-100% {
-  transform: translateY(0) rotate(2deg)  scale(1);
-}
+  transform: rotate(2deg);
 }
 
 .animate-spin{
@@ -433,15 +330,10 @@ padding: 10px;
 }
 }
 
-.purple-popup p {
-  font-size: 20px;
-}
-
-#instructions{
-  gap: 50px;
+#instructions {
   display: flex;
   color: white;
-  margin: 0 auto;
+  margin: 0 5em 7em;
   justify-content: space-between;
 }
 
@@ -497,9 +389,6 @@ h1.bases-col-3{
     font-size: 80px;
 }
 
-.bases-col p {
-  font-size: 25px;
-}
 
 footer {
   background-color: #00B0A9;

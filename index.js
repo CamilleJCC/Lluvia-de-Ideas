@@ -14,13 +14,10 @@ function showContent(tabNum) {
         contents[i].classList.add("hide");
         plusSigns[i].style.transform = "rotate(0deg)";
       }
-    } else {
-      contents[i].classList.remove("show");
-      contents[i].classList.add("hide");
-      plusSigns[i].style.transform = "rotate(0deg)";
     }
   }
 }
+
 
 
 let W = window.innerWidth;
