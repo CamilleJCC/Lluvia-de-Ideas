@@ -118,7 +118,12 @@ h1 {
 
 h2{
   font-size:5vh;
+  color: white;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size:3vh;
   color: white;
 }
 
@@ -351,7 +356,12 @@ width:33%;
 #bases h3 {
   text-align: left;
   align-self: flex-start;
-  font-size: 50px;
+
+}
+
+#bases h2 {
+  text-transform: inherit;
+  align-self: flex-start;
 }
 
 .bases-col {
