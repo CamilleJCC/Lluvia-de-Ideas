@@ -2,123 +2,153 @@
 <html>
  <link href="./index.css" type="text/css" rel="stylesheet">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Formulario - LLuvia de Ideas</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="./resources/dist/filepond.css" rel="stylesheet" />
 </head>
 <body>
     <nav class="fixed-nav">
         <div class="nav-col col-1">
-         <a href="index.html"><img src="./resources/images/pencil@2x.png" alt="Logo" class="logo"></a> 
+         <a href="index.html"></a><img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="logo" alt=""></a> 
         </div>
         <div class="buttons">
         <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="#services"><button>CERTAMEN</button></a></div>
         <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="formulario.html"><button>PARTICIPA</button></a></div>
-        <div class="nav-col col-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"><img src="./resources/images/sm_logo_blanco.png"></div>
         </div>
       </nav>
-      <div>
-        <div class="container-contact100 beforeSubmit">
-            <div class="wrap-contact100">
-                <div class="container-formtitles">
-                    <h1 class="formTitle">
-                        Introduce tus datos
-                    </h1>
-                    <p>
-                        Por favor, selecciona tantas opciones como te sea necesario en los campos etapa, cargo, curso y asignatura.
-                    </p>
+        <div class="container-contact100 beforeSubmit">  
+            <form id="contact" action="" method="post">
+              <h3>Pensad como un creativo
+                publicitario: convertid esas
+                ideas en imágenes
+                y texto.</h3>
+                <p>Mostrad al mundo lo
+                    especial que es vuestra
+                    provincia o localidad.</p>
+              
+              
+              <div id="firstblock" class="contact100-form validate-form">  
+                <fieldset>
+                <div class="input-item"><span class="label-input100">Nombre<i class="inputRequired">*</i></span>
+                <input  type="text" tabindex="1" class="input100" required autofocus>
                 </div>
-                <form id="firstblock" class="contact100-form validate-form">
-                    <input id="ln" class="input100" type="text" name="ln" hidden="" value="ES">
-                    <div class="toPost" id="toPost" hidden=""></div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Nombre es requerido">
-                        <span class="label-input100">Nombre<i class="inputRequired">*</i></span>
-                        <input id="nombre" class="input100" type="text" name="nombre">
-                        <p id="nombre-alert" class="requiredField">Este campo es requerido</p>
+                <div class="input-item"><span class="label-input100">Apellido<i class="inputRequired">*</i></span>
+                    <input  type="text" tabindex="1" class="input100" required autofocus>
                     </div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Apellido es requerido">
-                        <span class="label-input100">Apellido<i class="inputRequired">*</i></span>
-                        <input id="apellido" class="input100" type="text" name="apellido">
-                        <p id="apellido-alert" class="requiredField">Este campo es requerido</p>
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo DNI es requerido">
-                        <span class="label-input100">DNI<i class="inputRequired">*</i></span>
-                        <input id="dni" class="input100" type="text" name="dni">
-                        <p id="dni-alert" class="requiredField">Este campo es requerido</p>
-                        <p id="dni-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Correo es requerido">
-                        <span class="label-input100">Correo electrónico<i class="inputRequired">*</i></span>
-                        <input id="correo" class="input100" type="email" name="correo">
-                        <p id="correo-alert" class="requiredField">Este campo es requerido</p>
-                        <p id="correo-alert-format" class="requiredField">Rellena el campo con un formato válido</p>
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Código Postal es requerido">
-                        <span class="label-input100">Código postal<i class="inputRequired">*</i></span>
-                        <input id="codigopostal" class="input100" type="text" name="codigopostal" maxlength="5">
-                        <p id="codigopostal-alert" class="requiredField">Este campo es requerido</p>
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100 validate-input beforesubmit" data-validate="El campo Centro es requerido">
-                        <span class="label-input100">Centro<i class="inputRequired">*</i></span>
-                        <select class="input100-novalidate custom-select" id="centro"></select>
-                        <input id="centro-result" class="input100" type="text" name="centro-result" hidden="">
-                        <p id="centro-result-alert" class="requiredField">Este campo es requerido</p>
-                    </div>
-                    <div class="file-upload">
-                    <p class="label-input100">Click on the "Choose File" button to upload a file:</p>
-                    <div class="file-buttons">    <form action="/action_page.php">
-                        <input type="file" id="myFile" name="filename">
-                        <input type="submit" style="background-color: white;
-                  color: #00b0a9;
-                  padding: 10px 20px;
-                  border: none;
-                  cursor: pointer;
-                  text-transform: uppercase;
-                  font-family: 'SM Primaria-Bold';
-                  border-radius: 28px;
-                  font-size: 20px;
-                ">
-                    </form></div>
-</div>
-                    
-                </form>
-                
-                <form id="thirdblock" class="contact100-form validate-form">
-                    <div class="wrap-input100 validate-input beforesubmit checkboxes-bottom">
-                        <label class="container-checkbox">He leído y acepto la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">Política de privacidad</a> y las <a class="politicas" href="https://cloud.e.grupo-sm.com/eecc22-bases-promocion">condiciones de la promoción</a>.<i class="inputRequired">*</i>
-                            <input id="politicas" type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <p id="politicas-alert" class="requiredField">Este campo es requerido</p>
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100">
-                    </div>
-                    <div class="wrap-input100 rs1-wrap-input100">
-                    </div>
-                    <div class="aviso-container wrap-input100 validate-input beforesubmit">
-                        <span class="aviso-title">AVISO DE PRIVACIDAD</span>
-                       <span class="aviso-subtitles">Responsable del tratamiento:</span> Fundación Santa María. <span class="aviso-subtitles">Finalidad:</span> gestión de esta actividad o campaña y envío de información sobre productos y servicios de grupo SM. <span class="aviso-subtitles">Derechos:</span> puedes acceder, rectificar y suprimir los datos, así como ejercitar otros derechos legales, dirigiéndote por escrito al <a class="politicas" href="https://contactodpo.grupo-sm.com/">Delegado de Protección de Datos del Grupo SM</a>. Para más información, consulta la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">política de privacidad</a>.
-                                            </div>
-                    <div class="row container-contact100-form-btn beforesubmit">
-                        <div class="col text-center">
-                            <div class="loader" id="loader"></div>
-
-                            <button id="enviar" class="btn btn-default contact100-form-btn" href="#formTitle">Enviar datos</button>
-                            <p id="form-alert" style="padding-top: 10px" class="requiredField">Revisa los datos del formulario</p>
-                        </div>
-                    </div>
-                </form>
+                    <div class="input-item"><span class="label-input100">DNI<i class="inputRequired">*</i></span>
+                        <input type="text" tabindex="1" class="input100" required autofocus>
+                </div>
+                <div class="input-item"><span class="label-input100">Correo electronico<i class="inputRequired">*</i></span>
+                    <input type="text" tabindex="1" class="input100" required autofocus>
             </div>
+            <div class="input-item"><span class="label-input100">Codigo Postal<i class="inputRequired">*</i></span>
+                <input type="number" tabindex="1" class="input100" required autofocus>
         </div>
+        <div class="input-item"><span class="label-input100">Centro<i class="inputRequired">*</i></span>
+            <select name="centro" id="centro-select">
+            <option id="titulo" value="titulo" disabled="" selected="">Seleccione un centro...</option>
+            <option id="0015700002AOZCGAA5" value="0015700002AOZCGAA5">Col. Santa Pau</option>
+            <option id="001D000000pcLx8IAE" value="001D000000pcLx8IAE">Colegio Closa</option>
+            <option id="001D000000pcLwvIAE" value="001D000000pcLwvIAE">Colegio Sant Lluís</option>
+            <option id="001D000000pcLycIAE" value="001D000000pcLycIAE">Colegio Santapau - Aloma</option>
+            <option id="001D0000010dNXVIA2" value="001D0000010dNXVIA2">Col.legi Camí</option>
+            <option id="0015700002AOYcxAAH" value="0015700002AOYcxAAH">E.I. ALOMA</option><option id="0015700002AOWGFAA5" value="0015700002AOWGFAA5">E.I. Kuky'S</option>
+            <option id="0015700002AOUgCAAX" value="0015700002AOUgCAAX">E.I. Magnolia</option>
+            <option id="0015700002AOWyoAAH" value="0015700002AOWyoAAH">Escola Merce Rodoreda</option>
+            <option id="0015700002AOW6LAAX" value="0015700002AOW6LAAX">Escola Palma De Mallorca</option>
+            <option id="0015700002AOWymAAH" value="0015700002AOWymAAH">Escola Santiago Rusinyol</option>
+            <option id="0015700002AOVx0AAH" value="0015700002AOVx0AAH">Escola Splai</option>
+            <option id="0015700002AOVfVAAX" value="0015700002AOVfVAAX">Escola Tibidabo</option>
+            <option id="0015700002AOYNcAAP" value="0015700002AOYNcAAP">Escola Timbaler Del Bruch</option>
+            <option id="001D000000qzKYcIAM" value="001D000000qzKYcIAM">Escola Valldaura</option>
+            <option id="0015700002AOVfbAAH" value="0015700002AOVfbAAH">Escola Victor Catala</option>
+            <option id="0015700002AOUzTAAX" value="0015700002AOUzTAAX">Ins Francesc Fols I Calcats</option>
+            <option id="0015700002AOWmWAAX" value="0015700002AOWmWAAX">Ins Valldemossa</option>
+            <option id="0015700002AOV54AAH" value="0015700002AOV54AAH">Institut Escola El Molí</option>
+            <option id="0015700002AOWe9AAH" value="0015700002AOWe9AAH">Institut Nou Barris</option></select>
+
+    </div>
+</fieldset>
+            </div>
+            <div class="drop"><div class="drop-col">
+                <p>Sube el anuncio aquí, junto con tu nombre, tu email y tu centro. Identifica la obra con el lema de la campaña.</p><br>
+                <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       required>
+              </div>
+
+       <h1>- o -</h1>
+               <input type="file"></div>
+           
+              <fieldset>
+                <div><div class="wrap-input100 validate-input beforesubmit checkboxes-bottom">
+                    <label class="container-checkbox">He leído y acepto la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">Política de privacidad</a> y las <a class="politicas" href="https://cloud.e.grupo-sm.com/eecc22-bases-promocion">condiciones de la promoción</a>.<i class="inputRequired">*</i>
+                        <input id="politicas" type="checkbox" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <p id="politicas-alert" class="requiredField">Este campo es requerido</p>
+                </div>
+                <div class="wrap-input100 rs1-wrap-input100">
+                </div>
+                <div class="wrap-input100 rs1-wrap-input100">
+                </div>
+                <div class="aviso-container wrap-input100 validate-input beforesubmit">
+                    <span class="aviso-title">AVISO DE PRIVACIDAD</span>
+                   <span class="aviso-subtitles">Responsable del tratamiento:</span> Fundación Santa María. <span class="aviso-subtitles">Finalidad:</span> gestión de esta actividad o campaña y envío de información sobre productos y servicios de grupo SM. <span class="aviso-subtitles">Derechos:</span> puedes acceder, rectificar y suprimir los datos, así como ejercitar otros derechos legales, dirigiéndote por escrito al <a class="politicas" href="https://contactodpo.grupo-sm.com/">Delegado de Protección de Datos del Grupo SM</a>. Para más información, consulta la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">política de privacidad</a>.
+                                        </div>
+                <div class="row container-contact100-form-btn beforesubmit">
+                    <div class="col text-center">
+                        <div class="loader" id="loader"></div></div>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>            </form>
+          </div>
         </div>
+        
 
 </div>
+
 <footer>
-    <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 33px;
+    <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
       font-family: 'SM Primaria-Bold';">Andalucia</span></h1>
-      <img class="animate-spin" src="./resources/images/fechas.png" style=" width: 200px;
-     position:relative">
-    <img src="./resources/images/lapiz-footer.png">
+    <img src="./resources/images/lapiz_footer.png">
   </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    // prettier-ignore
+    [
+{supported: 'Symbol' in window, fill: 'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js'},
+{supported: 'Promise' in window, fill: 'https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js'},
+{supported: 'fetch' in window, fill: 'https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js'},
+{supported: 'CustomEvent' in window && 'log10' in Math && 'sign' in Math &&  'assign' in Object &&  'from' in Array &&
+            ['find', 'findIndex', 'some', 'includes'].reduce(function(previous, prop) { return (prop in Array.prototype) ? previous : false; }, true), fill: 'https://unpkg.com/filepond-polyfill/dist/filepond-polyfill.js'}
+].forEach(function(p) {
+if (p.supported) return;
+document.write('<script src="' + p.fill + '"><\/script>');
+});
+</script>
+
+<script src="./resources/dist/filepond.js"></script>
+
+<script>
+    // Get a reference to the file input element
+    const inputElement = document.querySelector('input[type="file"]');
+
+    // Create the FilePond instance
+    const pond = FilePond.create(inputElement, {
+        allowMultiple: true,
+        allowReorder: true,
+    });
+
+    // Easy console access for testing purposes
+    window.pond = pond;
+</script>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-8f83947f-fb76-c6bc-613e-9432e09ae890" crossorigin=""></script>
+<script src="script.js"></script>
 <script src="./index.js"></script> 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
