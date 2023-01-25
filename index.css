@@ -663,6 +663,50 @@ input::file-selector-button:hover {
   width: 354px;
 }
 
+.txt{
+  clear: both;
+  display: block;
+  margin-bottom: 5px;
+}
+.input-form{
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 5px;;
+ border-radius: 28px;
+
+}
+
+.info-grid{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+buttons-form{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  margin: 2em;
+}
+
+#but_add{
+  background-color: #00B0A9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'SM Primaria-Bold';
+    width: fit-content;
+    font-size: 2.4vh;
+    border-radius: 28px;
+}
+
+#but_add:hover{
+  background-color: #FB00A7;
+  color: white;
+}
+
 .multiselect__container:after {
 content:'';
 min-height:inherit;
