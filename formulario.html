@@ -98,7 +98,6 @@
             <div class="input-item"><span class="label-input100">Copia y pega la url de tu video<i class="inputRequired">*</i></span>
                 <input  type="url" tabindex="1" class="input100" required autofocus placeholder="www.ejemplo.com">
             </div>
-       
     </div>
     <input type="file">
 </div>
@@ -166,6 +165,16 @@ document.write('<script src="' + p.fill + '"><\/script>');
         allowMultiple: true,
         allowReorder: true,
     });
+    
+    FilePond.create(document.querySelector('input'), {
+    acceptedFileTypes: ['image/png'],
+    fileValidateTypeDetectType: (source, type) =>
+        new Promise((resolve, reject) => {
+            // Do custom type detection here and return with promise
+
+            resolve(type);
+        }),
+});
 
     // Easy console access for testing purposes
     window.pond = pond;
