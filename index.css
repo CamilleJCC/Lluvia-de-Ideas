@@ -115,7 +115,7 @@ button:hover{
 h1 {    
   font-size: 3vh;
   color: white;
-  font-family: 'SM PRIMARIA-LIGHT';
+  font-family: 'SM Primaria';
 }
 
 h2{
@@ -207,7 +207,9 @@ padding: 10px;
   padding: 8em 0em 0em;
   margin-bottom: 5em;
 }
-
+.lluvia-img {
+  width: 53vw;
+}
 .claim-grid img{
   width: 38vw;
   z-index: 20;
@@ -220,7 +222,7 @@ padding: 10px;
 }
 
 .claim-grid h1{
-  width: 55%;
+  width: 53%;
   margin-top: 20px;
   text-transform: inherit;
 }
@@ -231,7 +233,7 @@ padding: 10px;
 }
 
 .claim-grid-text{
-gap: 5em;
+gap: 2em;
 display: flex;
 justify-content: flex-end;
 }
