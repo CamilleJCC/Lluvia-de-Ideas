@@ -265,7 +265,7 @@ justify-content: flex-end;
 }
 
 .purple-popup {
-  width: 459px;
+  width: 521px;
   color: white;
   z-index: -1;
   transform: rotate(346deg);
@@ -942,12 +942,32 @@ label {
 canvas {
   overflow-y: hidden;
   overflow-x: hidden;
-
   margin-top: 13em;
   position: absolute;
   z-index: -10;
 
 }
+
+#gracias{
+  height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+#gracias h2{
+  text-transform: inherit;
+  width: 39%;
+}
+
+#gracias p {
+  width: 39%;
+}
+
 
 .col-right p{
   font-size: 1.6vh;

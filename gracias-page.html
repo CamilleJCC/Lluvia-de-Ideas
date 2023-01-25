@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <link href="./index.css" type="text/css" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Formulario - LLuvia de Ideas</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="./resources/dist/filepond.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="fixed-nav">
+        <div class="nav-col col-1">
+         <a href="index.html"><img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="logo" alt=""></a> 
+     </div>
+        <div class="buttons">
+        <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="#services"><button>CERTAMEN</button></a></div>
+        <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="formulario.html"><button>PARTICIPA</button></a></div>
+    </div>
+</nav>
+    <div id="mobile-menu"><input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+        <header><a href="index.html"><img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="logo" alt=""></a></header>
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+        <nav id="drawer">
+           <ul>
+              <li><a href="#services"><button>CERTAMEN</button></a></li>
+              <li><a href="formulario.html"><button>PARTICIPA</button></a></li>
+           </ul>
+        </nav>
+    </div>
+<canvas id="canvas"></canvas> 
+<div id="gracias" data-aos="fade-up" data-aos-duration="500"><h2>!Enhorabuena, gracias por participar!
+</h2><p>Recibirás un correo confirmando tu participación</p><br>
+<a href="index.html"><button>Volver al home</button></a>
+</div>
+<footer>
+    <div class="col-right">
+      <img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="d-inline-block align-top logo" alt="" style="margin-bottom:10px"><br>
+     <p>© 2023 Grupo SM. Todos los derechos reservados<br>
+     P.E. Prado del Espino. C/ Impresores, 2. 28660<br>
+    Boadilla del Monte, Madrid.</p><br>
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM" target="_blank"><span class="firstLinkFooter">Política de privacidad</span></a>
+      <span class="separatorFooter"> | </span> 
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-condiciones-de-uso-FSM" target="_blank"><span class="thirdLinkFooter">Condiciones de uso</span></a>
+      <span class="separatorFooter"> | </span> 
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-cookies-FSM" target="_blank"><span class="secondLinkFooter">Política de cookies</span></a>
+      <div class="rrss-container" style="padding-top:1em;padding-bottom:1em;">
+          <a href="https://www.instagram.com/smespana/"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+awesome-instagram.png" alt="Instagram" style="padding-right:1em;"></a>
+          <a href="https://twitter.com/SM_Espana"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-twitter.png" alt="Twitter" style="padding-right:1em;"></a>
+          <a href="https://www.youtube.com/channel/UCX7UUaiEUhw4is6n2jVC7SA"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+    <img src="./resources/images/lapiz_footer.png">
+    <div class="col-left">
+      <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
+        font-family: 'SM Primaria-Bold';">Andalucía</span></h1>
+    </div>
+  </footer>
+  <script src="./index.js"></script> 
+  <script src="vanilla-tilt.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+</script>
+</body>
+</html>
