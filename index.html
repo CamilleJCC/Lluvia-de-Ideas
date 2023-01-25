@@ -2,6 +2,7 @@
 <html>
  <link href="./index.css" type="text/css" rel="stylesheet">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Lluvia de Ideas</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
@@ -24,8 +25,8 @@
     <label for="drawer-toggle" id="drawer-toggle-label"></label>
     <nav id="drawer">
        <ul>
-          <li><a href="#services"><button>CERTAMEN</button></a></li>
-          <li><a href="formulario.html"><button>PARTICIPA</button></a></li>
+          <li><a href="#services">CERTAMEN</a></li>
+          <li><a href="formulario.html">PARTICIPA</a></li>
        </ul>
     </nav>
 </div>
@@ -34,7 +35,7 @@
   <div class="claim-grid">
     <a href="index.html"><img src="./resources/images/pencil@2x.png" alt="Logo" class="logo"></a> 
     <div class="claim-grid-text">    <h1>Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
-      font-family: 'SM Primaria-Bold';">Andalucia</span></h1>
+      font-family: 'SM Primaria-Bold';">Andalucía</span></h1>
     <p class="fechas-mobile-hide" style="font-size:3vh">Del 1 de febrero al 15 de marzo </p></div> 
     </div>
       <img src="./resources/images/Luvia de ideas@2x.png" width="800px" data-aos="fade-up" data-aos-duration="500" class="lluvia-img">
@@ -57,11 +58,12 @@
                   os gusta?</span></p></div>  
               
             </div>
-            <div id="fechas" data-aos="fade-up" data-aos-duration="500"><h2>En SM queremos premiar vuestra creatividad y, para ello, os proponemos este certamen de anuncios publicitarios. 
-            </h2>
+            <div id="fechas" data-aos="fade-up" data-aos-duration="500"><h2>En SM queremos premiar vuestra creatividad y, para ello, os proponemos este certamen de anuncios publicitarios
+            </h2><br>
+            <button id="boton-participa">Participa</button>
            </div>
 <div id="services">
-    <div class="clickable-div" onclick="showContent(1)" style="border-top:none"><h2 class="mark-green">El tema</h2><svg id="plus-sign-2" class="plus-sign mark-blue" viewBox="0 0 24 24">
+    <div class="clickable-div" onclick="showContent(1)" style="border-top:none"><h2 class="mark-green">El tema</h2><svg id="plus-sign-2" class="plus-sign mark-green" viewBox="0 0 24 24">
       <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
     </svg></div>
     <div id="content-1" class="content hide">
@@ -86,7 +88,7 @@
     <div id="content-3" class="content hide">
       <p>El plazo de participación comienza el <span style="font-family:SM Primaria-Bold">1 de febrero y termina el 15 de marzo.</span> Comunicaremos los ganadores el <span style="font-family:SM Primaria-Bold">15 de abril.</span></p>
     </div>
-    <div class="clickable-div" onclick="showContent(4)"><h2 class="mark-green">los premios</h2><svg id="plus-sign-2" class="plus-sign mark-blue" viewBox="0 0 24 24">
+    <div class="clickable-div" onclick="showContent(4)"><h2 class="mark-green">los premios</h2><svg id="plus-sign-2" class="plus-sign mark-green" viewBox="0 0 24 24">
       <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
     </svg></div>
     <div id="content-4" class="content hide">
@@ -129,75 +131,32 @@
         deseas hacerlo en otro 
         momento, solo tienes que 
         identificarte de nuevo.</h3>
-    </div>
-    </div>
-    <a href="formulario.html"><button>PARTICIPA</button></a>
-   <!--<div class="marquee-wrapper">
-      <div class="container">
-        <div class="marquee-block">
-          <div class="marquee-inner to-left">
-            <span>
-              <div class="marquee-item">
-                <p class="mark-purple">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-yellow">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-pink">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-green">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-purple">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-yellow">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-pink">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-green">¡PARTICIPA!</p>
-              </div>
-            </span>
-            <span>
-              <div class="marquee-item">
-                <p class="mark-purple">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-yellow">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-pink">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-green">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-purple">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-yellow">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-pink">¡PARTICIPA!</p>
-              </div>
-              <div class="marquee-item">
-                <p class="mark-green">¡PARTICIPA!</p>
-              </div>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>--> 
   </div>
+  </div>
+  <a href="formulario.html"><button id="boton-participa">Participa</button></a>
+</div>
   </div>
     <footer>
-      <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
-        font-family: 'SM Primaria-Bold';">Andalucia</span></h1>
+      <div class="col-left">
+        <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
+          font-family: 'SM Primaria-Bold';">Andalucía</span></h1>
+      </div>
       <img src="./resources/images/lapiz_footer.png">
+      <div class="col-right">
+        <img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="d-inline-block align-top logo" alt="" style="margin-bottom:10px"><br>
+       <p>© 2023 Grupo SM. Todos los derechos reservados<br>
+       P.E. Prado del Espino. C/ Impresores, 2. 28660<br>
+      Boadilla del Monte, Madrid.</p><br>
+        <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM" target="_blank"><span class="firstLinkFooter">Política de privacidad</span></a>
+        <span class="separatorFooter"> | </span> 
+        <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-condiciones-de-uso-FSM" target="_blank"><span class="thirdLinkFooter">Condiciones de uso</span></a>
+        <span class="separatorFooter"> | </span> 
+        <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-cookies-FSM" target="_blank"><span class="secondLinkFooter">Política de cookies</span></a>
+        <div class="rrss-container" style="padding-top:1em;padding-bottom:1em;">
+            <a href="https://www.instagram.com/smespana/"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+awesome-instagram.png" alt="Instagram" style="padding-right:1em;"></a>
+            <a href="https://twitter.com/SM_Espana"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-twitter.png" alt="Twitter" style="padding-right:1em;"></a>
+            <a href="https://www.youtube.com/channel/UCX7UUaiEUhw4is6n2jVC7SA"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-youtube.png" alt="Youtube"></a>
+      </div>
     </footer>
     <script src="./index.js"></script> 
     <script src="vanilla-tilt.js"></script>

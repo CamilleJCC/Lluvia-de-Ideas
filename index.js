@@ -22,7 +22,7 @@ let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-const maxConfettis = 40;
+const maxConfettis = 30;
 const particles = [];
 
 const possibleColors = [
@@ -40,9 +40,9 @@ const possibleColors = [
  function confettiParticle() {
    this.x = Math.random() * W; // x
    this.y = Math.random() * H - H; // y
-   this.r = 60;
+   this.r = 70;
    this.d = Math.random() * maxConfettis + 11;
-   this.height = randomFromTo(20,60); // new height variable
+   this.height = randomFromTo(20,40); // new height variable
    this.color = possibleColors[Math.floor(Math.random() * possibleColors.length)];
    this.tilt = Math.random() * (180) - 90; // tilt to random numbers
    this.tiltAngleIncremental = Math.random() * 0.05 + -0.05;
@@ -55,7 +55,7 @@ const possibleColors = [
      context.rotate(this.rotation);
      context.beginPath();
      context.strokeStyle = this.color;
-     context.lineWidth = this.r / 4;
+     context.lineWidth = this.r / 5;
      context.moveTo(0,0);
      context.lineTo(this.tilt, this.height);
  

@@ -28,13 +28,14 @@
            </ul>
         </nav>
     </div>
-        <div class="container-contact100 beforeSubmit">  
+        <div class="container-contact100 beforeSubmit"> 
             <form id="contact" action="" method="post">
-              <h3>Pensad como un creativo
-                publicitario: convertid esas
-                ideas en imágenes
-                y texto.</h3>
-                <p>Mostrad al mundo lo
+<a href="index.html"><button id="volver-home">volver al home</button></a> 
+              <h2>Deja aquí tus datos y ¡Participa!</h2>
+                <p>Pensad como un creativo
+                    publicitario: convertid esas
+                    ideas en imágenes
+                    y texto.Mostrad al mundo lo
                     especial que es vuestra
                     provincia o localidad.</p>
               
@@ -135,9 +136,26 @@
 
 </div>
 <footer>
-    <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
-      font-family: 'SM Primaria-Bold';">Andalucia</span></h1>
+    <div class="col-left">
+      <h1 class="footer-title">Un certamen de anuncios publicitarios para aulas de primaria <span style="font-size: 3vh;
+        font-family: 'SM Primaria-Bold';">Andalucía</span></h1>
+    </div>
     <img src="./resources/images/lapiz_footer.png">
+    <div class="col-right">
+      <img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="d-inline-block align-top logo" alt="" style="margin-bottom:10px"><br>
+     <p>© 2023 Grupo SM. Todos los derechos reservados<br>
+     P.E. Prado del Espino. C/ Impresores, 2. 28660<br>
+    Boadilla del Monte, Madrid.</p><br>
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM" target="_blank"><span class="firstLinkFooter">Política de privacidad</span></a>
+      <span class="separatorFooter"> | </span> 
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-condiciones-de-uso-FSM" target="_blank"><span class="thirdLinkFooter">Condiciones de uso</span></a>
+      <span class="separatorFooter"> | </span> 
+      <a class="link-footers" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-cookies-FSM" target="_blank"><span class="secondLinkFooter">Política de cookies</span></a>
+      <div class="rrss-container" style="padding-top:1em;padding-bottom:1em;">
+          <a href="https://www.instagram.com/smespana/"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+awesome-instagram.png" alt="Instagram" style="padding-right:1em;"></a>
+          <a href="https://twitter.com/SM_Espana"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-twitter.png" alt="Twitter" style="padding-right:1em;"></a>
+          <a href="https://www.youtube.com/channel/UCX7UUaiEUhw4is6n2jVC7SA"><img class="filter" src="https://image.e.grupo-sm.com/lib/fe3e11717564047c731573/m/1/Icon+simple-youtube.png" alt="Youtube"></a>
+    </div>
   </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
@@ -165,16 +183,6 @@ document.write('<script src="' + p.fill + '"><\/script>');
         allowMultiple: true,
         allowReorder: true,
     });
-    
-    FilePond.create(document.querySelector('input'), {
-    acceptedFileTypes: ['image/png'],
-    fileValidateTypeDetectType: (source, type) =>
-        new Promise((resolve, reject) => {
-            // Do custom type detection here and return with promise
-
-            resolve(type);
-        }),
-});
 
     // Easy console access for testing purposes
     window.pond = pond;

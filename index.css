@@ -78,6 +78,17 @@ button {
   font-size: 2.4vh;
   border-radius: 28px;
 }
+#boton-participa{
+  font-size: 4vh;
+    padding: 20px 30px;
+    border-radius: 110px;
+margin-top: 20px;
+}
+
+.filter{
+  width: 44px;
+}
+
 
 button:hover{
   background-color: #FB00A7;
@@ -149,7 +160,7 @@ padding: 10px;
   /* styles for the container div */
   display: flex;
   flex-direction: column;
-  margin-top: 11em;
+  margin-top: 7em;
 }
 
 .clickable-div {
@@ -207,11 +218,8 @@ padding: 10px;
   padding: 8em 0em 0em;
   margin-bottom: 13em;
 }
-.lluvia-img {
-  width: 45vw;
-}
 .claim-grid img{
-  width: 38vw;
+  width: 43vw;
   z-index: 20;
 }
 
@@ -402,7 +410,7 @@ footer {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 5em;
 }  
 
@@ -412,7 +420,7 @@ footer {
 }
 
 footer img{
-  width: 500px;
+  width: 450px;
 }
 
 .marquee-wrapper{
@@ -521,8 +529,7 @@ footer img{
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  margin: 9em 5em 0px;
-  border-radius: 28px;
+  margin: 6em 0em 0px;
   background: #552FEA;
 }
 
@@ -936,11 +943,18 @@ label {
 canvas {
   overflow-y: hidden;
   overflow-x: hidden;
-  width: 140%;
+
   margin-top: 13em;
   position: absolute;
   z-index: -10;
-  height: 140%;
+
+}
+
+.col-right p{
+  font-size: 1.6vh;
+}
+.col-right {
+  gap: 30px;
 }
 
 div.aviso-container.wrap-input100.validate-input.beforesubmit{
@@ -1022,6 +1036,21 @@ span.file-size {
   padding-left: 0.5rem;
 }
 
+#volver-home{
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  background: #00b0a9;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px 20px;
+  font-size: 2.4vh;  
+}
+
+#volver-home:hover{
+  background: #FB00A7;
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -1032,7 +1061,7 @@ span.file-size {
 }
 
 #contact {
-  padding: 50px;
+  padding: 5em;
   width: 100%;
   background-image: url(./resources/images/fondo-lluvia.png);
   background-position: bottom right;
@@ -1040,17 +1069,16 @@ span.file-size {
   background-repeat: no-repeat;
 }
 
-#contact h3 {
+#contact h2 {
   display: block;
-  font-size: 3vh;
-  font-weight: 300;
   margin-bottom: 10px;
-  width: 36vw;
+  width: 47vw;
   font-family: 'SM Primaria-Bold';
+  text-transform: inherit;
 }
 
 #contact p {
-  width: 36vw;
+  width: 47vw;
 }
 
 fieldset {
@@ -1183,7 +1211,7 @@ fieldset {
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-  right: 0px;
+  right: 2em;
   height: 50px;
   width: 50px;
   display: block;
@@ -1230,12 +1258,16 @@ fieldset {
     background: #00b0a9;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 20px;
+    padding: 9em 20px;
     -webkit-overflow-scrolling: touch;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 80;
+    background-image: url(./resources/images/fondo-lluvia.png);
+    background-size: 368px;
+    background-repeat: no-repeat;
+    background-position: 12px 322px;
   } 
   
   /* actual page content pane */ 
@@ -1259,7 +1291,7 @@ fieldset {
   }
   
   #drawer-toggle:checked ~ #drawer { 
-  right: 0px; 
+  right: 2.5em; 
   } 
   
   #drawer-toggle:checked ~ #page-content { 
@@ -1274,12 +1306,12 @@ fieldset {
   } 
   
   #drawer ul a { 
-  display:block; 
-  padding:10px; 
-  color:#c7c7c7; 
-  text-decoration:none; 
-  font-size: 3vh;
-  } 
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 6vh;
+}
   
   #drawer ul a:hover { 
   color:white; 
@@ -1345,7 +1377,21 @@ fieldset {
      background: #552FEA;
      border-radius: 0px;
  }
-   
+
+ .lluvia-img {
+  width: 88%;
+}
+
+#fechas h2{
+  font-size: 3vh;
+}
+
+h2{
+  font-size: 4vh;
+}
+.clickable-div {
+  padding: 20px 2em;
+}
    footer img{
      width: 100%;
    }
@@ -1375,15 +1421,31 @@ fieldset {
   }
   
   .brand-claim{
-    height: 74vh;
+    height: 100vh;
+    gap: 0px;
+    padding: 0px;
+    margin-bottom: 5em;
+    justify-content: space-between;
+  }
+  #services {
+    margin-top: 5em;
+}
+
+.info-grid {
+  flex-direction: column;
+}
+  p{
+    font-size: 2.4vh;
   }
   
   .claim-grid{
-      text-align: center;
-      flex-direction: column;
-      align-items: center;
-      gap: 2em;
-  }
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0em;
+    margin-top: 6em;
+}
+  
   .claim-grid h1{
     width: 100%;
       margin-top: 20px;
@@ -1401,17 +1463,16 @@ fieldset {
   
   #instructions {
     flex-direction: column;
-    gap: 131px;
-    margin-top: 25em;
+    margin: 5em auto;
+    gap: 43px;
   }
   
   .plus-sign {
-    height: 100px;
     transition: transform 0.5s ease;
   }
   
   #fechas{
-    padding: 0 5em;
+    padding: 0 2em;
     width: 100%;
   }
   .fechas-mobile-hide {
@@ -1425,9 +1486,9 @@ fieldset {
     font-family: 'SM Primaria-Bold';
   }
   .pink-popup, .yellow-popup, .green-popup, .purple-popup{
-    width: 72vw;
+    width: 74vw;
     margin: 0 auto;
-    padding: 50px;
+    padding: 23px;
   }
   
   .marquee-wrapper .marquee-block{
@@ -1435,11 +1496,15 @@ fieldset {
     width: calc(285px * (var(--total-marquee-items)));
   }
   .show {
-    padding: 1em 5em 5em 5em;
+    padding: 1em 2em 2em 2em;
     max-height: 100vh;
   }
+  #participa {
+    background-color: #00B0A9;
+    padding: 5em 2em 5em;
+}
   button {
     padding: 20px 30px;
     border-radius: 83px;
   }
-  }
+}
