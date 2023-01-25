@@ -1010,6 +1010,15 @@
 
     /* correct box sizing, line-height and positioning on child elements */
 }
+
+@media screen and (max-width:1000px) {
+ .filepond--root{
+    width: 95%;
+    margin-top: 1em;
+    padding: 0px;
+    margin-left: -1px;
+ }   
+}
 .filepond--root * {
     box-sizing: inherit;
     line-height: inherit;

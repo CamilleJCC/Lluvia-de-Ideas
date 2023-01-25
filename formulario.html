@@ -29,9 +29,7 @@
         </nav>
     </div>
         <div class="container-contact100 beforeSubmit"> 
-            <a href="index.html" style="align-self: flex-start;
-            padding: 1em 2em;
-        "><button id="volver-home">volver</button></a> 
+            <a href="index.html" class="volver-boton"><button id="volver-home">volver</button></a> 
             <form id="contact" action="" method="post">
 
               <h2>Deja aquí tus datos y ¡Participa!</h2>
@@ -80,9 +78,7 @@
 </div>
  <div class="drop">
         <div class="drop-col">
-                <p>Déjanos tus datos, y sube todas las creatividades que quieras y te enviaremos un email de confirmación.
-                </p><br>
-                
+                <p>Déjanos tus datos, y sube todas las creatividades que quieras y te enviaremos un email de confirmación.</p>   
         </div>
         <div class='input-form'>
     <div class="info-grid">
@@ -94,12 +90,13 @@
             </div>
             
     </div>
+    <span class="label-input100">Sube tu anuncio.<br>
+        Si es un vídeo, copia y pega aquí la url o si es un cartel, sube el archivo jpg o pdf.<i class="inputRequired">*</i></span>
     <div id="file-uploading">
-        <div class="input-item" style="width: 93%;"><span class="label-input100">Copia y pega la url de tu video<i class="inputRequired">*</i></span>
-            <input  type="url" tabindex="1" class="input100" required autofocus placeholder="www.ejemplo.com">
+        <div class="input-item" style="width: 93%;">
+            <input  type="url" tabindex="1" class="input100" required autofocus placeholder="Sube aquí la url">
         </div>
-        <div>
-            <span class="label-input100">Sube la imagen de tu cartel<i class="inputRequired">*</i></span>
+        <div>            
             <input type="file">
         </div>
        
@@ -127,10 +124,10 @@
                     <span class="aviso-title">AVISO DE PRIVACIDAD</span>
                    <span class="aviso-subtitles">Responsable del tratamiento:</span> Fundación Santa María. <span class="aviso-subtitles">Finalidad:</span> gestión de esta actividad o campaña y envío de información sobre productos y servicios de grupo SM. <span class="aviso-subtitles">Derechos:</span> puedes acceder, rectificar y suprimir los datos, así como ejercitar otros derechos legales, dirigiéndote por escrito al <a class="politicas" href="https://contactodpo.grupo-sm.com/">Delegado de Protección de Datos del Grupo SM</a>. Para más información, consulta la <a class="politicas" href="https://cloud.e.grupo-sm.com/formulario-unico-politica-de-privacidad-FSM">política de privacidad</a>.
                                         </div>
-                <div class="row container-contact100-form-btn beforesubmit">
+                <div class="row container-contact100-form-btn beforesubmit" style="text-align:center">
                     <div class="col text-center">
                         <div class="loader" id="loader"></div></div>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>  
+                <button name="submit" type="submit" id="boton-participa" data-submit="...Sending">Enviar</button>  
             </fieldset> 
           </div>
         </div>    
