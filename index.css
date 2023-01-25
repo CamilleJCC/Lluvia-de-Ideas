@@ -1267,6 +1267,13 @@ fieldset {
   z-index: 100; 
   top: 0;
   }
+
+  #file-uploading{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    padding-top: 2em;
+    width: 100%;
+}
   
   /* drawer menu pane - note the 0px width */ 
   

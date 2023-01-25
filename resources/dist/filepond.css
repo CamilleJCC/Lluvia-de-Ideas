@@ -978,9 +978,9 @@
     position: relative;
     margin-bottom: 1em;
     border-radius: 28px;
-    width: 100%;
+    width: 45%;
     padding: 9em 0em;
-    margin: 1em auto;
+    margin: 1em;
     border-style: dashed;
 
     /* base font size for whole component */
@@ -990,8 +990,7 @@
     line-height: normal;
 
     /* up uses default system font family */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: 'SM Primaria';
 
     /* will increase font weight a bit on Safari */
     font-weight: 450;

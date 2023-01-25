@@ -31,7 +31,7 @@
         <div class="container-contact100 beforeSubmit"> 
             <a href="index.html" style="align-self: flex-start;
             padding: 1em 2em;
-        "><button id="volver-home">volver al home</button></a> 
+        "><button id="volver-home">volver</button></a> 
             <form id="contact" action="" method="post">
 
               <h2>Deja aquí tus datos y ¡Participa!</h2>
@@ -78,11 +78,12 @@
     </div>
 </fieldset>
             </div>
-            <div class="drop"><div class="drop-col">
+        <div class="drop"><div class="drop-col">
                 <p>Déjanos tus datos, y sube todas las creatividades que quieras y te enviaremos un email de confirmación.
                 </p><br>
                 
-              </div>
+            </div>
+        </div>
 <div class='input-form'>
     <div class="info-grid">
         <div class="input-item"><span class="label-input100">Clase participante<i class="inputRequired">*</i></span>
@@ -91,11 +92,18 @@
             <div class="input-item"><span class="label-input100">Lema de vuestro anuncio<i class="inputRequired">*</i></span>
                 <input  type="text" tabindex="1" class="input100" required autofocus>
             </div>
-            <div class="input-item"><span class="label-input100">Copia y pega la url de tu video<i class="inputRequired">*</i></span>
-                <input  type="url" tabindex="1" class="input100" required autofocus placeholder="www.ejemplo.com">
-            </div>
+            
     </div>
-    <input type="file">
+    <div id="file-uploading">
+        <div class="input-item" style="width: 93%;"><span class="label-input100">Copia y pega la url de tu video<i class="inputRequired">*</i></span>
+            <input  type="url" tabindex="1" class="input100" required autofocus placeholder="www.ejemplo.com">
+        </div>
+        <div>
+            <span class="label-input100">Sube la imagen de tu cartel<i class="inputRequired">*</i></span>
+            <input type="file">
+        </div>
+       
+    </div> 
 </div>
 <buttons-form>
     <input type='button' id='but_add' value='Nuevo archivo'>
@@ -163,7 +171,7 @@
 {supported: 'Symbol' in window, fill: 'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js'},
 {supported: 'Promise' in window, fill: 'https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js'},
 {supported: 'fetch' in window, fill: 'https://cdn.jsdelivr.net/npm/fetch-polyfill@0.8.2/fetch.min.js'},
-{supported: 'CustomEvent' in window && 'log10' in Math && 'sign' in Math &&  'assign' in Object &&  'from' in Array &&
+{supported: 'CustomEvent' in window && 'log10' in Math && 'sign' in Math &&  'assign' in Object &&  'from' in xy &&
             ['find', 'findIndex', 'some', 'includes'].reduce(function(previous, prop) { return (prop in Array.prototype) ? previous : false; }, true), fill: 'https://unpkg.com/filepond-polyfill/dist/filepond-polyfill.js'}
 ].forEach(function(p) {
 if (p.supported) return;
