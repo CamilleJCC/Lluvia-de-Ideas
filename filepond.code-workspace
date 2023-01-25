@@ -1,10 +1,6 @@
 {
 	"folders": [
 		{
-			"name": "filepond",
-			"path": "../filepond"
-		},
-		{
 			"name": "Lluvia-de-Ideas",
 			"path": "."
 		}

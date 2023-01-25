@@ -11,10 +11,10 @@
 <body>
     <nav class="fixed-nav">
         <div class="nav-col col-1">
-         <a href="index.html"><img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="logo" alt=""></a> 
+         <a href="https://www.grupo-sm.com/es/"><img src="https://www.grupo-sm.com/sites/all/themes/sm_main_site_th/logo.png" class="logo" alt=""></a> 
      </div>
         <div class="buttons">
-        <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="#services"><button>CERTAMEN</button></a></div>
+        <div class="nav-col col-2" data-aos="fade-up" data-aos-duration="500"><a href="index.html"><button>CERTAMEN</button></a></div>
         <div class="nav-col col-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"><a href="formulario.html"><button>PARTICIPA</button></a></div>
     </div>
 </nav>
@@ -23,7 +23,7 @@
         <label for="drawer-toggle" id="drawer-toggle-label"></label>
         <nav id="drawer">
            <ul>
-              <li><a href="#services"><button>CERTAMEN</button></a></li>
+              <li><a href="index.html"><button>CERTAMEN</button></a></li>
               <li><a href="formulario.html"><button>PARTICIPA</button></a></li>
            </ul>
         </nav>
@@ -78,7 +78,7 @@
 </div>
  <div class="drop">
         <div class="drop-col">
-                <p>Déjanos tus datos, y sube todas las creatividades que quieras y te enviaremos un email de confirmación.</p>   
+                <p>Sube aquí tu anuncio junto con el nombre de vuestra clase y el lema. ¡Puedes subir tantos anuncios como quieras!</p>   
         </div>
         <div class='input-form'>
     <div class="info-grid">
@@ -91,7 +91,7 @@
             
     </div>
     <span class="label-input100">Sube tu anuncio.<br>
-        Si es un vídeo, copia y pega aquí la url o si es un cartel, sube el archivo jpg o pdf.<i class="inputRequired">*</i></span>
+        Si es un vídeo, copia y pega aquí la url o, si es un cartel, sube el archivo jpg o pdf.<i class="inputRequired">*</i></span>
     <div id="file-uploading">
         <div class="input-item" style="width: 93%;">
             <input  type="url" tabindex="1" class="input100" required autofocus placeholder="Sube aquí la url">
@@ -103,8 +103,7 @@
     </div> 
         </div>
         <buttons-form>
-    <input type='button' id='but_add' value='Nuevo archivo'>
-    <button class="remove">borrar</button>
+    <input type='button' id='but_add' value='Subir más anuncios'>
         </buttons-form>
 </div>
 <fieldset>
@@ -212,10 +211,6 @@ document.write('<script src="' + p.fill + '"><\/script>');
         });
     
     });
-
-    $('.input-form').on('click', '.remove', function() {
-    $('.remove').closest('.input-form').find('.element').not(':first').last().remove();
-});
 
 
 </script>
