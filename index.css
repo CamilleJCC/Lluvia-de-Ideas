@@ -1371,6 +1371,14 @@ fieldset {
       padding: 2em;
       gap: 90px;
    } 
+
+   #gracias h2{
+    width: 100%;
+   }
+
+   #gracias p{
+    width: 100%;
+   }
  
    #mobile-menu{
      opacity: 1;

@@ -3807,7 +3807,7 @@
         labelThousandsSeparator: [getThousandsSeparator(), Type.STRING], // Default is locale separator
 
         labelIdle: [
-            '<strong>Arrastre y suelte</strong> sus archivos o <span class="filepond--label-action"><strong>Navegue</strong></span>',
+            'Arrastre y suelte sus archivos o <span class="filepond--label-action">Navegue</span>',
             Type.STRING,
         ],
 

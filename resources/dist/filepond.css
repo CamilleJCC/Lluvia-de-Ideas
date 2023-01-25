@@ -112,6 +112,8 @@
     border-radius: 28px;
     padding: 10px 20px;
     font-size: 2.4vh;
+    text-transform: uppercase;
+    font-family: 'SM Primaria-Bold';
 }
 .filepond--drop-label label {
     cursor: default;
